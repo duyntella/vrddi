@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vrddi | Pitchdeck Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{
+  --blue:#1557C0;
+  --blue-deep:#0B347B;
+  --gold:#F6AA1C;
+  --ink:#0F172A;
+  --muted:#64748B;
+  --paper:#F7FAFF;
+  --line:#E2EAF5;
+  --green:#059669;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+body{margin:0;font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,#fff 0%,#f6f9ff 46%,#fff 100%);color:var(--ink)}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(246,170,28,.28)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(15,23,42,.08)}
+.logo-mark{width:40px;height:40px;border-radius:14px;background:linear-gradient(135deg,var(--gold) 0 43%,var(--blue) 44%);box-shadow:0 12px 28px rgba(21,87,192,.14);flex:0 0 auto}
+.btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--blue-deep),var(--blue));color:white;box-shadow:0 14px 30px rgba(21,87,192,.2);transition:.22s ease}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(21,87,192,.26)}
+.btn-soft{display:inline-flex;align-items:center;justify-content:center;background:#fff;border:1px solid var(--line);box-shadow:0 10px 26px rgba(15,23,42,.055);transition:.22s ease}.btn-soft:hover{transform:translateY(-2px);border-color:#cbd9ee}
+.hero{position:relative;min-height:92vh;padding-top:98px;overflow:hidden;background:radial-gradient(circle at 12% 7%,rgba(246,170,28,.15),transparent 27%),radial-gradient(circle at 88% 10%,rgba(21,87,192,.14),transparent 30%),linear-gradient(180deg,#fff 0%,#f5f8ff 100%)}
+.grid-bg{background-image:linear-gradient(rgba(21,87,192,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(21,87,192,.055) 1px,transparent 1px);background-size:54px 54px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid rgba(21,87,192,.14);background:#fff;border-radius:999px;color:var(--blue-deep);font-weight:800;font-size:12px;letter-spacing:.01em;box-shadow:0 10px 30px rgba(15,23,42,.045)}
+.title-xl{font-weight:900;letter-spacing:-.045em;line-height:1.03;font-size:clamp(36px,5.4vw,66px)}
+.title-lg{font-weight:900;letter-spacing:-.035em;line-height:1.08;font-size:clamp(28px,4.2vw,48px)}
+.lead{font-size:clamp(17px,1.65vw,22px);line-height:1.65;color:#475569}
+.text-body{font-size:17px;line-height:1.65;color:#475569}.text-small{font-size:14px;line-height:1.55;color:#64748B}
+.gradient-text{background:linear-gradient(90deg,var(--blue-deep),var(--blue),#1689CE);-webkit-background-clip:text;background-clip:text;color:transparent}.gold-text{color:var(--gold)}
+.card{background:rgba(255,255,255,.9);border:1px solid rgba(226,232,240,.95);box-shadow:0 18px 55px rgba(15,23,42,.06);border-radius:28px}.card-strong{background:#fff;border:1px solid var(--line);box-shadow:0 24px 68px rgba(15,23,42,.08);border-radius:32px}.metric{font-size:clamp(30px,3.7vw,46px);font-weight:900;letter-spacing:-.035em;line-height:1}.section{padding:88px 0}.pill{border-radius:999px;padding:7px 11px;font-weight:800;font-size:12px;white-space:nowrap}.pill-blue{background:#EAF2FF;color:var(--blue-deep)}.pill-green{background:#E9F8F1;color:#047857}.pill-gold{background:#FFF5DA;color:#B77900}.pill-red{background:#FFF1F2;color:#BE123C}
+.fade{opacity:0;transform:translateY(20px);transition:all .65s cubic-bezier(.2,.8,.2,1)}.fade.show{opacity:1;transform:translateY(0)}
+.problem-card{transition:.22s ease}.problem-card:hover{transform:translateY(-5px);box-shadow:0 24px 58px rgba(15,23,42,.09)}
+.step-num{width:44px;height:44px;min-width:44px;border-radius:16px;background:linear-gradient(135deg,var(--blue),#1D7FF2);color:white;display:flex;align-items:center;justify-content:center;font-weight:900;box-shadow:0 12px 24px rgba(21,87,192,.18)}
+.compare{overflow:hidden}.compare-row{display:grid;grid-template-columns:1.25fr .9fr .9fr;border-bottom:1px solid var(--line)}.compare-row:last-child{border-bottom:0}.compare-row>div{padding:16px 18px}.compare-head{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:900;background:#F8FBFF}.check{color:#059669;font-weight:900}.cross{color:#E11D48;font-weight:900}
+.range{appearance:none;width:100%;height:7px;border-radius:999px;background:#D9E5F4;outline:none}.range::-webkit-slider-thumb{appearance:none;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--blue),#1D7FF2);box-shadow:0 8px 18px rgba(21,87,192,.28);cursor:pointer}.range::-moz-range-thumb{width:22px;height:22px;border:0;border-radius:50%;background:var(--blue);cursor:pointer}.input-card{background:#F8FBFF;border:1px solid var(--line);border-radius:20px;padding:18px}.result-card{background:linear-gradient(135deg,#0B347B,#1557C0 62%,#1D7FF2);color:white;border-radius:30px;box-shadow:0 24px 62px rgba(21,87,192,.24)}
+.mini-chart{height:9px;background:#E7EEF8;border-radius:999px;overflow:hidden}.mini-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--gold),var(--blue));transition:width .35s ease}.usecase{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;min-height:162px;transition:.22s ease}.usecase:hover{transform:translateY(-4px);box-shadow:0 18px 48px rgba(15,23,42,.07)}
+.orbit{position:relative;aspect-ratio:1;border-radius:999px;background:radial-gradient(circle,#fff 0 32%,#EAF2FF 33% 52%,#fff 53%);border:1px solid var(--line);box-shadow:inset 0 0 0 15px rgba(21,87,192,.025),0 24px 62px rgba(15,23,42,.075)}.orbit-dot{position:absolute;width:72px;height:72px;border-radius:23px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:11px;box-shadow:0 16px 32px rgba(15,23,42,.08);padding:6px}.dot-1{top:5%;left:50%;transform:translateX(-50%)}.dot-2{top:27%;right:2%}.dot-3{bottom:15%;right:10%}.dot-4{bottom:15%;left:10%}.dot-5{top:27%;left:2%}.orbit-center{position:absolute;inset:36%;border-radius:28px;background:linear-gradient(135deg,var(--blue),#1D7FF2);color:white;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;box-shadow:0 16px 34px rgba(21,87,192,.24);padding:8px}
+.mobile-nav-btn{display:none}
+@media(max-width:1024px){.nav-links{display:none}.mobile-stack{grid-template-columns:1fr!important}.hide-tablet{display:none}.hero{min-height:auto;padding-top:86px}.section{padding:72px 0}.compare-row{grid-template-columns:1fr}.compare-row>div{border-bottom:1px solid var(--line)}.compare-row>div:last-child{border-bottom:0}.compare-head{display:none}.compare-row>div[data-label]:before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#94A3B8;font-weight:900;margin-bottom:5px}.mobile-nav-btn{display:inline-flex}}
+@media(max-width:640px){.nav-inner{padding:11px 15px!important}.logo-mark{width:36px;height:36px;border-radius:12px}.nav-cta{display:none}.hero{padding-top:76px}.hero-wrap{padding-top:46px!important;padding-bottom:54px!important}.title-xl{font-size:34px;letter-spacing:-.035em}.title-lg{font-size:27px;letter-spacing:-.028em}.lead{font-size:16px;line-height:1.58}.text-body{font-size:15.5px}.section{padding:58px 0}.card,.card-strong,.result-card{border-radius:22px}.metric{font-size:31px}.pill{font-size:11px;padding:6px 9px}.hero-cta{flex-direction:column}.btn-primary,.btn-soft{width:100%}.compare-row>div{padding:14px}.input-card{padding:16px;border-radius:18px}.orbit{max-width:330px;margin:0 auto}.orbit-dot{width:60px;height:60px;font-size:9.5px;border-radius:18px}.orbit-center{font-size:11px;border-radius:22px}.mobile-two{grid-template-columns:1fr!important}.usecase{min-height:auto}.result-number{font-size:35px!important;line-height:1.1}.hero-stats{grid-template-columns:1fr!important}.hero-card{padding:20px!important}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+    <a href="#top" class="flex items-center gap-3 text-slate-900">
+      <div class="logo-mark"></div>
+      <div><div class="font-black text-lg tracking-tight">Vrddi</div><div class="text-xs font-semibold text-slate-500">Phúc lợi tài chính linh hoạt</div></div>
+    </a>
+    <div class="nav-links flex items-center gap-7 text-sm font-bold text-slate-600">
+      <a href="#pain" class="hover:text-blue-700">Nỗi đau</a>
+      <a href="#solution" class="hover:text-blue-700">Giải pháp</a>
+      <a href="#demo" class="hover:text-blue-700">Demo</a>
+      <a href="#proof" class="hover:text-blue-700">Số liệu</a>
+      <a href="#pilot" class="hover:text-blue-700">Pilot</a>
+    </div>
+    <a href="#demo" class="nav-cta btn-primary px-5 py-3 rounded-full font-black text-sm">Tính thử</a>
+  </div>
+</nav>
+
+<header id="top" class="hero grid-bg">
+  <div class="hero-wrap max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center mobile-stack">
+      <div class="fade">
+        <div class="eyebrow mb-6"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>Đã vận hành toàn cầu · Đang có mặt tại Việt Nam</div>
+        <h1 class="title-xl mb-6">Để nhân sự <span class="gradient-text">bớt lo tiền</span> đúng lúc cần nhất.</h1>
+        <p class="lead max-w-2xl mb-8">Vrddi giúp doanh nghiệp tạo một phúc lợi tài chính rõ giá trị: nhân viên đóng khoản nhỏ hằng tháng, khi phát sinh việc cấp thiết có thể nhận khoản hỗ trợ lớn hơn nhiều lần — không vay, không lãi suất.</p>
+        <div class="hero-cta flex flex-wrap gap-4 mb-10">
+          <a href="#demo" class="btn-primary px-6 py-4 rounded-2xl font-black">Tính thử khoản nhận được <span>→</span></a>
+          <a href="#solution" class="btn-soft px-6 py-4 rounded-2xl font-black text-slate-800">Xem cách vận hành</a>
+        </div>
+        <div class="hero-stats grid grid-cols-3 gap-4 max-w-2xl">
+          <div class="card hero-card p-5"><div class="metric gradient-text">0%</div><div class="text-small font-bold mt-2">lãi suất cho nhân viên</div></div>
+          <div class="card hero-card p-5"><div class="metric gradient-text">99%</div><div class="text-small font-bold mt-2">tự động ra quyết định</div></div>
+          <div class="card hero-card p-5"><div class="metric gradient-text">0</div><div class="text-small font-bold mt-2">vốn lưu động công ty</div></div>
+        </div>
+      </div>
+
+      <div class="fade">
+        <div class="card-strong p-6 lg:p-8">
+          <div class="flex items-start justify-between gap-5 mb-7">
+            <div><div class="text-small font-bold uppercase tracking-wider">Executive snapshot</div><h2 class="text-2xl lg:text-3xl font-black tracking-tight mt-2">Một phúc lợi chạm đúng nỗi lo thật.</h2></div>
+            <span class="pill pill-green">Live model</span>
+          </div>
+          <div class="space-y-4">
+            <div class="card p-5 flex gap-4 items-start"><div class="step-num">1</div><div><h3 class="font-black text-lg">Nhân viên có việc gấp</h3><p class="text-small mt-1">Viện phí, học phí, sửa nhà, nghĩa vụ gia đình.</p></div></div>
+            <div class="card p-5 flex gap-4 items-start"><div class="step-num">2</div><div><h3 class="font-black text-lg">Hệ thống xử lý thay HR</h3><p class="text-small mt-1">Cấu hình rule, xét điều kiện, gợi ý quyết định tự động.</p></div></div>
+            <div class="card p-5 flex gap-4 items-start"><div class="step-num">3</div><div><h3 class="font-black text-lg">Nhận khoản lớn, không lãi</h3><p class="text-small mt-1">Tạo “wow moment” mà không biến nhân viên thành con nợ.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="pain" class="section">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-4xl mb-12 fade">
+      <div class="eyebrow mb-5">01 · Nỗi đau thật</div>
+      <h2 class="title-lg">Không phải lúc nào nhân sự cũng cần tăng lương. Nhiều lúc, họ cần <span class="gradient-text">tiền đúng thời điểm</span>.</h2>
+      <p class="lead mt-5">Khi thiếu tiền trước kỳ lương, nhân viên thường chỉ còn vài lựa chọn xấu: vay lãi cao, hỏi tạm ứng hoặc tự xoay sở trong áp lực.</p>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-6 mobile-stack">
+      <div class="card p-7 problem-card fade"><div class="text-4xl mb-5">💸</div><h3 class="text-xl font-black mb-3">Với nhân viên</h3><p class="text-body">Một khoản chi bất ngờ có thể kéo theo stress, vay mượn và mất tập trung trong công việc.</p><div class="pill pill-red inline-block mt-5">Financial stress</div></div>
+      <div class="card p-7 problem-card fade"><div class="text-4xl mb-5">🧾</div><h3 class="text-xl font-black mb-3">Với HR</h3><p class="text-body">Tạm ứng lương thủ công tạo thêm việc: giấy tờ, kiểm tra, phê duyệt, theo dõi hoàn ứng.</p><div class="pill pill-gold inline-block mt-5">Thêm scope vận hành</div></div>
+      <div class="card p-7 problem-card fade"><div class="text-4xl mb-5">📉</div><h3 class="text-xl font-black mb-3">Với CEO / CFO</h3><p class="text-body">Tăng lương không phải lúc nào cũng giữ được người, còn tạm ứng lại đụng vốn lưu động và rủi ro quản trị.</p><div class="pill pill-blue inline-block mt-5">Chi phí tăng, tác động mờ</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="solution" class="section bg-white border-y border-slate-200/70">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-4xl mx-auto mb-14 fade">
+      <div class="eyebrow mb-5">02 · Giải pháp</div>
+      <h2 class="title-lg">Vrddi: phúc lợi tài chính <span class="gradient-text">tự vận hành</span> cho lực lượng lao động lớn.</h2>
+      <p class="lead mt-5">Không phải khoản vay. Không phải công ty cho mượn tiền. Vrddi tổ chức nhóm, quản trị pool và tự động hóa quyết định để nhân sự nhận hỗ trợ khi cần.</p>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-10 items-center mobile-stack">
+      <div class="fade">
+        <div class="orbit">
+          <div class="orbit-dot dot-1">Nhân viên<br>tham gia</div>
+          <div class="orbit-dot dot-2">Đóng góp<br>hằng tháng</div>
+          <div class="orbit-dot dot-3">Request<br>nhu cầu thật</div>
+          <div class="orbit-dot dot-4">Smart<br>decision</div>
+          <div class="orbit-dot dot-5">Payout<br>0% lãi</div>
+          <div class="orbit-center">Vrddi<br>Engine</div>
+        </div>
+      </div>
+      <div class="space-y-4 fade">
+        <div class="card p-6 flex gap-4"><div class="step-num">01</div><div><h3 class="text-xl font-black mb-2">Nhân viên bớt gánh lo</h3><p class="text-body">Có thêm điểm tựa tài chính cho các việc quan trọng mà không phải vay lãi.</p></div></div>
+        <div class="card p-6 flex gap-4"><div class="step-num">02</div><div><h3 class="text-xl font-black mb-2">HR không ôm thêm việc</h3><p class="text-body">Dashboard và thuật toán xử lý phần lớn request; HR chỉ can thiệp ở ngoại lệ.</p></div></div>
+        <div class="card p-6 flex gap-4"><div class="step-num">03</div><div><h3 class="text-xl font-black mb-2">Doanh nghiệp không dùng vốn lưu động</h3><p class="text-body">Mô hình không dựa vào quỹ tạm ứng của công ty, không tạo rủi ro nợ xấu như khoản vay.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-10 items-start mobile-stack">
+      <div class="fade">
+        <div class="eyebrow mb-5">03 · Điểm khác biệt</div>
+        <h2 class="title-lg mb-6">Một lợi ích đủ dễ hiểu để nhân viên muốn tham gia.</h2>
+        <p class="lead">So với tạm ứng lương hoặc vay cá nhân, Vrddi tạo giá trị ở cả 3 phía: nhân viên thấy lợi ích ngay, HR giảm việc, CEO/CFO kiểm soát tốt hơn.</p>
+      </div>
+      <div class="card-strong compare fade">
+        <div class="compare-row compare-head"><div>Tiêu chí</div><div>Tạm ứng / vay</div><div>Vrddi</div></div>
+        <div class="compare-row"><div data-label="Tiêu chí" class="font-black">Trải nghiệm nhân viên</div><div data-label="Tạm ứng / vay">Chậm, giấy tờ, dễ ngại hỏi</div><div data-label="Vrddi"><span class="check">Nhanh, rõ, không lãi</span></div></div>
+        <div class="compare-row"><div data-label="Tiêu chí" class="font-black">Nguồn chi trả</div><div data-label="Tạm ứng / vay">Vốn công ty hoặc khoản vay</div><div data-label="Vrddi"><span class="check">Pool theo nhóm</span></div></div>
+        <div class="compare-row"><div data-label="Tiêu chí" class="font-black">Workload HR</div><div data-label="Tạm ứng / vay"><span class="cross">Tăng</span></div><div data-label="Vrddi"><span class="check">Giảm nhờ tự động hóa</span></div></div>
+        <div class="compare-row"><div data-label="Tiêu chí" class="font-black">Phạm vi áp dụng</div><div data-label="Tạm ứng / vay">Thường hạn chế</div><div data-label="Vrddi"><span class="check">Có thể mở rộng toàn lực lượng</span></div></div>
+        <div class="compare-row"><div data-label="Tiêu chí" class="font-black">Cảm nhận giá trị</div><div data-label="Tạm ứng / vay">Là nợ hoặc ứng trước</div><div data-label="Vrddi"><span class="check">Là phúc lợi có ích đúng lúc</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="demo" class="section bg-slate-50 border-y border-slate-200/70">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-4xl mx-auto mb-12 fade">
+      <div class="eyebrow mb-5">04 · Demo tính toán</div>
+      <h2 class="title-lg">Thấy ngay: đóng nhỏ hằng tháng, nhận khoản lớn khi cần.</h2>
+      <p class="lead mt-5">Ví dụ gốc của Vrddi: nhóm 12 người, mỗi người đóng 250 USD/tháng, pool tạo ra 3.000 USD. Khi có 1 request hợp lệ, người đó có thể nhận 3.000 USD — tương đương 12x khoản đóng.</p>
+    </div>
+    <div class="grid lg:grid-cols-5 gap-8 mobile-stack">
+      <div class="lg:col-span-2 card-strong p-6 lg:p-8 fade">
+        <h3 class="text-2xl font-black mb-6">Group Payout Calculator</h3>
+        <div class="space-y-5">
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số người trong group</label><span id="groupValue" class="pill pill-blue">12 người</span></div><input id="groupSize" class="range" type="range" min="6" max="24" value="12" step="1"></div>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Đóng góp hằng tháng</label><span id="contributionValue" class="pill pill-gold">250 USD</span></div><input id="monthlyContribution" class="range" type="range" min="50" max="1000" value="250" step="50"></div>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số người request/tháng</label><span id="requestValue" class="pill pill-green">1 người</span></div><input id="requestCount" class="range" type="range" min="1" max="4" value="1" step="1"></div>
+          <p class="text-small">Demo dùng để hình dung logic pool. Thực tế triển khai sẽ được cấu hình theo chính sách, điều kiện và dữ liệu của từng doanh nghiệp.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-3 space-y-5 fade">
+        <div class="result-card p-7 lg:p-9">
+          <div class="grid md:grid-cols-2 gap-7 mobile-two">
+            <div><div class="text-blue-100 font-bold mb-2">Tổng pool mỗi tháng</div><div id="poolResult" class="result-number text-4xl lg:text-5xl font-black tracking-tight">3,000 USD</div><div class="text-blue-100 mt-3">= số người × khoản đóng</div></div>
+            <div><div class="text-blue-100 font-bold mb-2">Một người nhận khi request</div><div id="payoutResult" class="result-number text-4xl lg:text-5xl font-black tracking-tight text-amber-200">3,000 USD</div><div id="multipleResult" class="text-blue-100 mt-3">Tương đương 12x khoản đóng hằng tháng</div></div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5 mobile-two">
+          <div class="card p-5"><div class="text-small font-bold">Người nhận trong tháng</div><div id="peoplePaid" class="metric gradient-text mt-2">1</div></div>
+          <div class="card p-5"><div class="text-small font-bold">Tổng chi trả mô phỏng</div><div id="totalPayout" class="metric gradient-text mt-2">3,000</div></div>
+          <div class="card p-5"><div class="text-small font-bold">Lãi suất nhân viên</div><div class="metric gradient-text mt-2">0%</div></div>
+        </div>
+        <div class="card p-6"><h4 class="font-black text-xl mb-2">Thông điệp dễ nhớ</h4><p id="cvpText" class="text-body">Với 12 người trong group, mỗi người đóng 250 USD/tháng. Khi có nhu cầu hợp lệ, một nhân sự có thể nhận 3.000 USD — gấp 12 lần khoản đóng hằng tháng — không lãi suất, không tạo khoản vay cá nhân.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-10 items-start mobile-stack">
+      <div class="fade">
+        <div class="eyebrow mb-5">05 · Use cases</div>
+        <h2 class="title-lg mb-6">Phúc lợi có giá trị nhất khi chạm đúng việc thật.</h2>
+        <p class="lead mb-7">Vrddi tập trung vào các thời điểm tài chính nhạy cảm: lúc nhân viên cần tiền để lo cho sức khỏe, con cái, nhà cửa hoặc gia đình.</p>
+        <div class="card p-6">
+          <div class="font-black text-xl mb-4">Danh mục được sử dụng nhiều</div>
+          <div class="space-y-4">
+            <div><div class="flex justify-between font-bold text-sm mb-2"><span>Y tế</span><span>41%</span></div><div class="mini-chart"><div class="mini-fill" style="width:41%"></div></div></div>
+            <div><div class="flex justify-between font-bold text-sm mb-2"><span>Giáo dục</span><span>38%</span></div><div class="mini-chart"><div class="mini-fill" style="width:38%"></div></div></div>
+            <div><div class="flex justify-between font-bold text-sm mb-2"><span>Cải thiện nhà cửa</span><span>12%</span></div><div class="mini-chart"><div class="mini-fill" style="width:12%"></div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5 fade">
+        <div class="usecase"><div class="text-3xl mb-4">🏥</div><h3 class="font-black text-xl mb-2">Y tế</h3><p class="text-small">Nhập viện, thuốc, xét nghiệm, xe cấp cứu, chăm sóc tại nhà, chạy thận, hóa trị.</p></div>
+        <div class="usecase"><div class="text-3xl mb-4">🎓</div><h3 class="font-black text-xl mb-2">Giáo dục</h3><p class="text-small">Học phí, phí nhập học, sách vở, đồng phục, thiết bị học tập.</p></div>
+        <div class="usecase"><div class="text-3xl mb-4">🏠</div><h3 class="font-black text-xl mb-2">Nhà cửa</h3><p class="text-small">Sửa mái, nhà vệ sinh, bếp, bể nước, thiết bị gia dụng thiết yếu.</p></div>
+        <div class="usecase"><div class="text-3xl mb-4">🤝</div><h3 class="font-black text-xl mb-2">Gia đình</h3><p class="text-small">Đám cưới, nghĩa vụ gia đình, lễ hội, từ thiện, hoạt động cộng đồng.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proof" class="section bg-white border-y border-slate-200/70">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-4xl mx-auto mb-12 fade">
+      <div class="eyebrow mb-5">06 · Số liệu vận hành</div>
+      <h2 class="title-lg">Không chỉ là concept. Vrddi đã có traction thật.</h2>
+      <p class="lead mt-5">Các số liệu dưới đây được tóm tắt từ tài liệu giới thiệu Vrddi: giao dịch đã thực hiện, pipeline, đối tác payroll và mức độ tự động hóa.</p>
+    </div>
+    <div class="grid lg:grid-cols-4 gap-6 mobile-stack">
+      <div class="card-strong p-6 fade"><div class="pill pill-blue inline-block mb-4">Transactions</div><div class="metric gradient-text">2.700+</div><p class="text-small font-bold mt-3">giao dịch đã thực hiện từ khi ra mắt.</p></div>
+      <div class="card-strong p-6 fade"><div class="pill pill-gold inline-block mb-4">Pipeline</div><div class="metric gradient-text">96.000</div><p class="text-small font-bold mt-3">giao dịch trong pipeline.</p></div>
+      <div class="card-strong p-6 fade"><div class="pill pill-green inline-block mb-4">Payroll partner</div><div class="metric gradient-text">45.000</div><p class="text-small font-bold mt-3">nhân viên qua hợp tác SumoPayroll.</p></div>
+      <div class="card-strong p-6 fade"><div class="pill pill-blue inline-block mb-4">Automation</div><div class="metric gradient-text">99%</div><p class="text-small font-bold mt-3">auto group & decision making.</p></div>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-6 mt-6 mobile-stack">
+      <div class="card p-6 fade"><h3 class="font-black text-xl mb-2">Đang hoạt động tại Việt Nam</h3><p class="text-body">Phù hợp để pilot với doanh nghiệp đông nhân sự, nhiều ca vận hành và nhu cầu phúc lợi rõ.</p></div>
+      <div class="card p-6 fade"><h3 class="font-black text-xl mb-2">Đã mở rộng quốc tế</h3><p class="text-body">Tài liệu ghi nhận approval từ Central Banks tại Bahrain và Qatar.</p></div>
+      <div class="card p-6 fade"><h3 class="font-black text-xl mb-2">ROI employer 60x</h3><p class="text-body">Vrddi nêu ROI 60x, 0 working capital spent và 98% group stability factor.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pilot" class="section">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="card-strong p-7 lg:p-10 overflow-hidden relative fade">
+      <div class="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-blue-100"></div><div class="absolute -left-24 -bottom-24 w-72 h-72 rounded-full bg-amber-100"></div>
+      <div class="relative z-10 grid lg:grid-cols-2 gap-9 items-center mobile-stack">
+        <div>
+          <div class="eyebrow mb-5">Pilot cho doanh nghiệp</div>
+          <h2 class="title-lg mb-5">Bắt đầu nhỏ. Đo nhanh. Mở rộng khi thấy hiệu quả.</h2>
+          <p class="lead">Nên pilot với nhóm có nhu cầu rõ: vận hành, bán lẻ, F&B, logistics, manufacturing hoặc nhóm thu nhập trung bình. Mục tiêu là tạo “wow moment”, đo adoption và chứng minh HR không tăng tải.</p>
+        </div>
+        <div class="space-y-4">
+          <div class="card p-5 flex gap-4"><div class="step-num">1</div><div><h3 class="font-black">Chọn nhóm pilot</h3><p class="text-small">50–300 nhân sự hoặc theo đơn vị kinh doanh.</p></div></div>
+          <div class="card p-5 flex gap-4"><div class="step-num">2</div><div><h3 class="font-black">Cấu hình rule & payroll data</h3><p class="text-small">Xác định group, mức đóng, danh mục request và quyền phê duyệt.</p></div></div>
+          <div class="card p-5 flex gap-4"><div class="step-num">3</div><div><h3 class="font-black">Theo dõi dashboard</h3><p class="text-small">Adoption, request, thời gian xử lý, group stability và feedback.</p></div></div>
+          <a href="mailto:contactus@vrddi.com" class="btn-primary px-6 py-4 rounded-2xl font-black w-full">Liên hệ demo: contactus@vrddi.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-9 text-center text-slate-500 border-t border-slate-200 bg-white">
+  <div class="max-w-7xl mx-auto px-6"><div class="font-black text-slate-900 text-xl mb-2">Vrddi</div><div class="text-small">Phúc lợi tài chính linh hoạt cho doanh nghiệp — không vay, không lãi suất, không tăng scope vận hành HR.</div></div>
+</footer>
+
+<script>
+const fmtUSD = n => new Intl.NumberFormat('en-US', {maximumFractionDigits:0}).format(n) + ' USD';
+const groupSize = document.getElementById('groupSize');
+const monthlyContribution = document.getElementById('monthlyContribution');
+const requestCount = document.getElementById('requestCount');
+const groupValue = document.getElementById('groupValue');
+const contributionValue = document.getElementById('contributionValue');
+const requestValue = document.getElementById('requestValue');
+const poolResult = document.getElementById('poolResult');
+const payoutResult = document.getElementById('payoutResult');
+const multipleResult = document.getElementById('multipleResult');
+const peoplePaid = document.getElementById('peoplePaid');
+const totalPayout = document.getElementById('totalPayout');
+const cvpText = document.getElementById('cvpText');
+function updateDemo(){
+  const g = parseInt(groupSize.value,10);
+  const c = parseInt(monthlyContribution.value,10);
+  const r = parseInt(requestCount.value,10);
+  const pool = g*c;
+  const perPerson = Math.floor(pool/r);
+  const multiple = (perPerson/c).toFixed(1).replace('.0','');
+  groupValue.textContent = g + ' người';
+  contributionValue.textContent = fmtUSD(c);
+  requestValue.textContent = r + ' người';
+  poolResult.textContent = fmtUSD(pool);
+  payoutResult.textContent = fmtUSD(perPerson);
+  multipleResult.textContent = 'Tương đương ' + multiple + 'x khoản đóng hằng tháng';
+  peoplePaid.textContent = r;
+  totalPayout.textContent = new Intl.NumberFormat('en-US').format(pool);
+  cvpText.textContent = `Với ${g} người trong group, mỗi người đóng ${fmtUSD(c)}/tháng. Khi có ${r} nhân sự request trong tháng, mỗi người có thể nhận khoảng ${fmtUSD(perPerson)} — tương đương ${multiple}x khoản đóng hằng tháng — không lãi suất, không tạo khoản vay cá nhân.`;
+}
+[groupSize,monthlyContribution,requestCount].forEach(el=>el.addEventListener('input', updateDemo));
+updateDemo();
+const observer = new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show')}})},{threshold:.08});
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
