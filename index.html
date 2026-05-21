@@ -44,8 +44,26 @@ a{color:inherit;text-decoration:none}
 .mini-chart{height:9px;background:#E7EEF8;border-radius:999px;overflow:hidden}.mini-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--gold),var(--blue));transition:width .35s ease}.usecase{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;min-height:162px;transition:.22s ease}.usecase:hover{transform:translateY(-4px);box-shadow:0 18px 48px rgba(15,23,42,.07)}
 .orbit{position:relative;aspect-ratio:1;border-radius:999px;background:radial-gradient(circle,#fff 0 32%,#EAF2FF 33% 52%,#fff 53%);border:1px solid var(--line);box-shadow:inset 0 0 0 15px rgba(21,87,192,.025),0 24px 62px rgba(15,23,42,.075)}.orbit-dot{position:absolute;width:72px;height:72px;border-radius:23px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:11px;box-shadow:0 16px 32px rgba(15,23,42,.08);padding:6px}.dot-1{top:5%;left:50%;transform:translateX(-50%)}.dot-2{top:27%;right:2%}.dot-3{bottom:15%;right:10%}.dot-4{bottom:15%;left:10%}.dot-5{top:27%;left:2%}.orbit-center{position:absolute;inset:36%;border-radius:28px;background:linear-gradient(135deg,var(--blue),#1D7FF2);color:white;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;box-shadow:0 16px 34px rgba(21,87,192,.24);padding:8px}
 .mobile-nav-btn{display:none}
+
+.compare-enhanced{background:linear-gradient(180deg,#fff 0%,#f8fbff 100%)}
+.compare-top-cell{border-radius:18px;padding:14px 16px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;text-align:center}.compare-top-cell.muted{background:#F1F5F9;color:#64748B}.compare-top-cell.old{background:#FFF1F2;color:#BE123C}.compare-top-cell.vrddi{background:#E9F8F1;color:#047857}
+.compare-list{display:flex;flex-direction:column;gap:12px}.compare-item{display:grid;grid-template-columns:1.05fr 1fr 1.18fr;gap:12px;align-items:stretch}.compare-item>div{border-radius:18px;padding:16px 18px;font-weight:750;line-height:1.45}.compare-criterion{background:#F8FAFC;color:#0F172A;border:1px solid #E2EAF5}.compare-old{background:#FFF7F7;color:#9F1239;border:1px solid #FFE4E6}.compare-vrddi{background:linear-gradient(135deg,#ECFDF5,#EFF6FF);color:#065F46;border:1px solid #BBF7D0;box-shadow:0 10px 26px rgba(5,150,105,.07)}
+.compare-vrddi:before{content:'✓ ';font-weight:900;color:#059669}.compare-old:before{content:'× ';font-weight:900;color:#E11D48}.currency-toggle{display:flex;gap:8px;background:#F1F5F9;border:1px solid var(--line);padding:5px;border-radius:999px}.currency-toggle button{border:0;background:transparent;border-radius:999px;padding:7px 12px;font-weight:900;font-size:12px;color:#64748B;cursor:pointer}.currency-toggle button.active{background:#fff;color:var(--blue-deep);box-shadow:0 6px 18px rgba(15,23,42,.08)}
+@media(max-width:1024px){.compare-top{display:none!important}.compare-item{grid-template-columns:1fr}.compare-item>div{padding:14px 15px}.compare-criterion{font-size:17px}.compare-old:before{content:'Tạm ứng / Vay: ';font-size:11px;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:5px}.compare-vrddi:before{content:'✓ Vrddi: ';font-size:11px;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:5px}.nav-links{display:flex;overflow-x:auto;gap:16px;max-width:calc(100vw - 170px);padding:4px 0;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}}
+
 @media(max-width:1024px){.nav-links{display:none}.mobile-stack{grid-template-columns:1fr!important}.hide-tablet{display:none}.hero{min-height:auto;padding-top:86px}.section{padding:72px 0}.compare-row{grid-template-columns:1fr}.compare-row>div{border-bottom:1px solid var(--line)}.compare-row>div:last-child{border-bottom:0}.compare-head{display:none}.compare-row>div[data-label]:before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#94A3B8;font-weight:900;margin-bottom:5px}.mobile-nav-btn{display:inline-flex}}
 @media(max-width:640px){.nav-inner{padding:11px 15px!important}.logo-mark{width:36px;height:36px;border-radius:12px}.nav-cta{display:none}.hero{padding-top:76px}.hero-wrap{padding-top:46px!important;padding-bottom:54px!important}.title-xl{font-size:34px;letter-spacing:-.035em}.title-lg{font-size:27px;letter-spacing:-.028em}.lead{font-size:16px;line-height:1.58}.text-body{font-size:15.5px}.section{padding:58px 0}.card,.card-strong,.result-card{border-radius:22px}.metric{font-size:31px}.pill{font-size:11px;padding:6px 9px}.hero-cta{flex-direction:column}.btn-primary,.btn-soft{width:100%}.compare-row>div{padding:14px}.input-card{padding:16px;border-radius:18px}.orbit{max-width:330px;margin:0 auto}.orbit-dot{width:60px;height:60px;font-size:9.5px;border-radius:18px}.orbit-center{font-size:11px;border-radius:22px}.mobile-two{grid-template-columns:1fr!important}.usecase{min-height:auto}.result-number{font-size:35px!important;line-height:1.1}.hero-stats{grid-template-columns:1fr!important}.hero-card{padding:20px!important}}
+@media(max-width:1024px){.nav-links{display:flex!important;overflow-x:auto;gap:16px;max-width:calc(100vw - 170px);padding:4px 0;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}}
+@media(max-width:640px){.nav-links{max-width:calc(100vw - 95px);font-size:12px}.nav-inner{gap:8px}.nav-inner>a:first-child>div:last-child{display:none}.currency-toggle{width:100%;justify-content:center}.flex:has(.currency-toggle){flex-direction:column;align-items:flex-start}}
+
+.lang-toggle{display:flex;gap:5px;background:#F1F5F9;border:1px solid var(--line);padding:4px;border-radius:999px;flex:0 0 auto}.lang-toggle button{border:0;background:transparent;border-radius:999px;padding:7px 10px;font-weight:900;font-size:12px;color:#64748B;cursor:pointer}.lang-toggle button.active{background:#fff;color:var(--blue-deep);box-shadow:0 6px 18px rgba(15,23,42,.08)}
+@media(min-width:1025px){
+  html{scroll-snap-type:y mandatory;scroll-padding-top:64px}.nav-inner{padding-top:10px!important;padding-bottom:10px!important}.nav-links{gap:20px!important}.nav-actions{gap:10px!important}.nav-cta{padding:10px 16px!important}.hero,.section{min-height:100vh;display:flex;align-items:center;scroll-snap-align:start;padding:64px 0 28px}.hero{padding-top:64px}.hero-wrap{padding-top:34px!important;padding-bottom:22px!important}.section>div{width:100%}.max-w-7xl{max-width:1180px!important}.max-w-6xl{max-width:1100px!important}.title-xl{font-size:clamp(34px,4.2vw,56px);line-height:1.02}.title-lg{font-size:clamp(25px,3.05vw,38px);line-height:1.06}.lead{font-size:clamp(14.5px,1.15vw,18px);line-height:1.45}.text-body{font-size:14.5px;line-height:1.48}.text-small{font-size:12.5px;line-height:1.42}.eyebrow{font-size:11px;padding:7px 11px}.metric{font-size:clamp(27px,3vw,38px)}.step-num{width:38px;height:38px;min-width:38px;border-radius:14px}.hero .gap-12,.section .gap-10,.section .gap-9,.section .gap-8{gap:1.45rem!important}.section .mb-14{margin-bottom:1.6rem!important}.section .mb-12{margin-bottom:1.45rem!important}.section .mb-10{margin-bottom:1.25rem!important}.section .mb-8{margin-bottom:1rem!important}.section .mb-7{margin-bottom:1rem!important}.section .mb-6{margin-bottom:.85rem!important}.section .mb-5{margin-bottom:.75rem!important}.hero .mb-10{margin-bottom:1.25rem!important}.hero .mb-8{margin-bottom:1.1rem!important}.hero .mb-7{margin-bottom:1rem!important}.hero .mb-6{margin-bottom:1rem!important}.card.p-7,.card.p-6,.card.p-5,.card-strong.p-7,.card-strong.p-6,.input-card,.usecase{padding:16px!important}.card-strong.lg\:p-10,.card-strong.lg\:p-8,.result-card.lg\:p-9{padding:20px!important}.result-card.p-7{padding:20px!important}.problem-card .text-4xl,.usecase .text-3xl{font-size:1.55rem!important;margin-bottom:.65rem!important}.problem-card h3,.usecase h3{font-size:1.08rem!important;margin-bottom:.45rem!important}.pill{font-size:11px;padding:6px 9px}.orbit{max-height:430px;max-width:430px;margin:0 auto}.orbit-dot{width:62px;height:62px;font-size:9.5px;border-radius:18px}.orbit-center{font-size:12px;border-radius:22px}.compare-item{gap:9px}.compare-item>div{padding:12px 14px;font-size:13.5px}.compare-top-cell{padding:11px 12px}.input-card{border-radius:16px}.input-card .mb-4{margin-bottom:.65rem!important}.space-y-5>:not([hidden])~:not([hidden]){margin-top:.8rem!important}.space-y-4>:not([hidden])~:not([hidden]){margin-top:.65rem!important}.grid.lg\:grid-cols-4{gap:1rem!important}.hero-stats{gap:.85rem!important}.hero-card{padding:15px!important}.mini-chart{height:7px}.usecase{min-height:134px}.result-number{font-size:clamp(28px,3.1vw,40px)!important}.nav .text-xs{max-width:360px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.currency-toggle button{padding:6px 10px}.section[id="demo"] .grid.lg\:grid-cols-5{gap:1.15rem!important}.section[id="proof"] .card-strong,.section[id="proof"] .card{padding:16px!important}.section[id="pilot"] .card-strong{padding:26px!important}
+}
+@media(max-width:640px){.nav-actions{gap:6px}.lang-toggle{padding:3px}.lang-toggle button{padding:6px 8px;font-size:11px}.nav-links{display:none!important}.nav-inner{justify-content:space-between}.nav-cta{display:none!important}.section{scroll-snap-align:none}}
+@media(max-width:1024px){html{scroll-snap-type:none}.nav-actions{margin-left:auto}.nav-links{display:none!important}}
+@media(max-width:1024px){html[lang="en"] .compare-old:before{content:'Advance / Loan: '!important}html[lang="en"] .compare-vrddi:before{content:'✓ Vrddi: '!important}}
+
 </style>
 </head>
 <body>
@@ -53,16 +71,22 @@ a{color:inherit;text-decoration:none}
   <div class="nav-inner max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
     <a href="#top" class="flex items-center gap-3 text-slate-900">
       <div class="logo-mark"></div>
-      <div><div class="font-black text-lg tracking-tight">Vrddi</div><div class="text-xs font-semibold text-slate-500">Phúc lợi tài chính linh hoạt</div></div>
+      <div><div class="font-black text-lg tracking-tight">Vrddi</div><div class="text-xs font-semibold text-slate-500">Phúc lợi Sức khỏe Tài chính nhân sự</div></div>
     </a>
     <div class="nav-links flex items-center gap-7 text-sm font-bold text-slate-600">
-      <a href="#pain" class="hover:text-blue-700">Nỗi đau</a>
+      <a href="#pain" class="hover:text-blue-700">Nhân sự nghỉ việc</a>
       <a href="#solution" class="hover:text-blue-700">Giải pháp</a>
       <a href="#demo" class="hover:text-blue-700">Demo</a>
-      <a href="#proof" class="hover:text-blue-700">Số liệu</a>
+      <a href="#proof" class="hover:text-blue-700">Minh chứng</a>
       <a href="#pilot" class="hover:text-blue-700">Pilot</a>
     </div>
-    <a href="#demo" class="nav-cta btn-primary px-5 py-3 rounded-full font-black text-sm">Tính thử</a>
+    <div class="nav-actions flex items-center gap-3">
+      <div class="lang-toggle" aria-label="Language switcher">
+        <button id="langVi" type="button" class="active" onclick="setLanguage('vi')">VI</button>
+        <button id="langEn" type="button" onclick="setLanguage('en')">EN</button>
+      </div>
+      <a href="#roi" class="nav-cta btn-primary px-5 py-3 rounded-full font-black text-sm">Tính ROI</a>
+    </div>
   </div>
 </nav>
 
@@ -70,30 +94,30 @@ a{color:inherit;text-decoration:none}
   <div class="hero-wrap max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 items-center mobile-stack">
       <div class="fade">
-        <div class="eyebrow mb-6"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>Đã vận hành toàn cầu · Đang có mặt tại Việt Nam</div>
-        <h1 class="title-xl mb-6">Để nhân sự <span class="gradient-text">bớt lo tiền</span> đúng lúc cần nhất.</h1>
-        <p class="lead max-w-2xl mb-8">Vrddi giúp doanh nghiệp tạo một phúc lợi tài chính rõ giá trị: nhân viên đóng khoản nhỏ hằng tháng, khi phát sinh việc cấp thiết có thể nhận khoản hỗ trợ lớn hơn nhiều lần — không vay, không lãi suất.</p>
+        <div class="eyebrow mb-6"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>Đã vận hành tại Ấn Độ, Bahrain, Qatar — Đang pilot tại Việt Nam</div>
+        <h1 class="title-xl mb-6">Giữ người không cần tăng lương. <span class="gradient-text">Nhân viên có tiền khi cần</span> — không vay, không lãi.</h1>
+        <p class="lead max-w-2xl mb-8">Mỗi tháng nhân viên đóng một khoản nhỏ. Khi có việc gấp — viện phí, học phí, sửa nhà — họ nhận hỗ trợ lớn hơn <strong class="text-blue-800">10–12 lần</strong>, ngay trong kỳ lương. Doanh nghiệp không bỏ vốn. HR không tăng việc.</p>
         <div class="hero-cta flex flex-wrap gap-4 mb-10">
-          <a href="#demo" class="btn-primary px-6 py-4 rounded-2xl font-black">Tính thử khoản nhận được <span>→</span></a>
-          <a href="#solution" class="btn-soft px-6 py-4 rounded-2xl font-black text-slate-800">Xem cách vận hành</a>
+          <a href="#roi" class="btn-primary px-6 py-4 rounded-2xl font-black">Tính ROI cho doanh nghiệp của bạn <span>→</span></a>
+          <a href="#demo" class="btn-soft px-6 py-4 rounded-2xl font-black text-slate-800">Xem demo thực tế (2 phút)</a>
         </div>
         <div class="hero-stats grid grid-cols-3 gap-4 max-w-2xl">
-          <div class="card hero-card p-5"><div class="metric gradient-text">0%</div><div class="text-small font-bold mt-2">lãi suất cho nhân viên</div></div>
-          <div class="card hero-card p-5"><div class="metric gradient-text">99%</div><div class="text-small font-bold mt-2">tự động ra quyết định</div></div>
-          <div class="card hero-card p-5"><div class="metric gradient-text">0</div><div class="text-small font-bold mt-2">vốn lưu động công ty</div></div>
+          <div class="card hero-card p-5"><div class="metric gradient-text">0%</div><div class="text-small font-bold mt-2">lãi — nhân viên nhận, không phải vay</div></div>
+          <div class="card hero-card p-5"><div class="metric gradient-text">99%</div><div class="text-small font-bold mt-2">tự động — HR không cần xử lý thủ công</div></div>
+          <div class="card hero-card p-5"><div class="metric gradient-text">0đ</div><div class="text-small font-bold mt-2">vốn doanh nghiệp bỏ ra</div></div>
         </div>
       </div>
 
       <div class="fade">
         <div class="card-strong p-6 lg:p-8">
           <div class="flex items-start justify-between gap-5 mb-7">
-            <div><div class="text-small font-bold uppercase tracking-wider">Executive snapshot</div><h2 class="text-2xl lg:text-3xl font-black tracking-tight mt-2">Một phúc lợi chạm đúng nỗi lo thật.</h2></div>
+            <div><div class="text-small font-bold uppercase tracking-wider">Cách vận hành — 3 bước</div><h2 class="text-2xl lg:text-3xl font-black tracking-tight mt-2">3 bước từ đóng góp → nhận tiền — không qua ai duyệt.</h2></div>
             <span class="pill pill-green">Live model</span>
           </div>
           <div class="space-y-4">
-            <div class="card p-5 flex gap-4 items-start"><div class="step-num">1</div><div><h3 class="font-black text-lg">Nhân viên có việc gấp</h3><p class="text-small mt-1">Viện phí, học phí, sửa nhà, nghĩa vụ gia đình.</p></div></div>
-            <div class="card p-5 flex gap-4 items-start"><div class="step-num">2</div><div><h3 class="font-black text-lg">Hệ thống xử lý thay HR</h3><p class="text-small mt-1">Cấu hình rule, xét điều kiện, gợi ý quyết định tự động.</p></div></div>
-            <div class="card p-5 flex gap-4 items-start"><div class="step-num">3</div><div><h3 class="font-black text-lg">Nhận khoản lớn, không lãi</h3><p class="text-small mt-1">Tạo “wow moment” mà không biến nhân viên thành con nợ.</p></div></div>
+            <div class="card p-5 flex gap-4 items-start"><div class="step-num">1</div><div><h3 class="font-black text-lg">Nhân viên có việc bất ngờ cần tiền</h3><p class="text-small mt-1">Viện phí đột xuất, học phí đầu năm, sửa nhà — những khoản không thể đợi đến 2 tháng lương tới.</p></div></div>
+            <div class="card p-5 flex gap-4 items-start"><div class="step-num">2</div><div><h3 class="font-black text-lg">Hệ thống xử lý thay HR</h3><p class="text-small mt-1">Hệ thống kiểm tra điều kiện và gợi ý quyết định — không cần HR xem từng hồ sơ.</p></div></div>
+            <div class="card p-5 flex gap-4 items-start"><div class="step-num">3</div><div><h3 class="font-black text-lg">Nhận 10–12x khoản đóng — ngay trong kỳ lương gần nhất</h3><p class="text-small mt-1">Nhân viên cảm nhận được doanh nghiệp quan tâm thật sự — không phải vay nợ, không áp lực trả.</p></div></div>
           </div>
         </div>
       </div>
@@ -105,13 +129,13 @@ a{color:inherit;text-decoration:none}
   <div class="max-w-7xl mx-auto px-6">
     <div class="max-w-4xl mb-12 fade">
       <div class="eyebrow mb-5">01 · Nỗi đau thật</div>
-      <h2 class="title-lg">Không phải lúc nào nhân sự cũng cần tăng lương. Nhiều lúc, họ cần <span class="gradient-text">tiền đúng thời điểm</span>.</h2>
-      <p class="lead mt-5">Khi thiếu tiền trước kỳ lương, nhân viên thường chỉ còn vài lựa chọn xấu: vay lãi cao, hỏi tạm ứng hoặc tự xoay sở trong áp lực.</p>
+      <h2 class="title-lg">Nhân sự không nghỉ vì lương thấp — họ nghỉ vì <span class="gradient-text">thiếu tiền đúng lúc</span>.</h2>
+      <p class="lead mt-5">Khi thiếu tiền trước kỳ lương, nhân viên không báo HR. Họ âm thầm vay tín dụng đen, mượn đồng nghiệp — hoặc bắt đầu nhìn sang chỗ khác hoặc làm thêm nhiều việc. Doanh nghiệp thường chỉ biết khi họ đã nộp đơn nghỉ.</p>
     </div>
     <div class="grid lg:grid-cols-3 gap-6 mobile-stack">
-      <div class="card p-7 problem-card fade"><div class="text-4xl mb-5">💸</div><h3 class="text-xl font-black mb-3">Với nhân viên</h3><p class="text-body">Một khoản chi bất ngờ có thể kéo theo stress, vay mượn và mất tập trung trong công việc.</p><div class="pill pill-red inline-block mt-5">Financial stress</div></div>
-      <div class="card p-7 problem-card fade"><div class="text-4xl mb-5">🧾</div><h3 class="text-xl font-black mb-3">Với HR</h3><p class="text-body">Tạm ứng lương thủ công tạo thêm việc: giấy tờ, kiểm tra, phê duyệt, theo dõi hoàn ứng.</p><div class="pill pill-gold inline-block mt-5">Thêm scope vận hành</div></div>
-      <div class="card p-7 problem-card fade"><div class="text-4xl mb-5">📉</div><h3 class="text-xl font-black mb-3">Với CEO / CFO</h3><p class="text-body">Tăng lương không phải lúc nào cũng giữ được người, còn tạm ứng lại đụng vốn lưu động và rủi ro quản trị.</p><div class="pill pill-blue inline-block mt-5">Chi phí tăng, tác động mờ</div></div>
+      <div class="card p-7 problem-card fade"><div class="text-4xl mb-5">💸</div><h3 class="text-xl font-black mb-3">Với nhân viên</h3><p class="text-body">Một khoản chi 20–30 triệu có thể kéo nhân viên vào vòng xoay vay lãi, mất ngủ, giảm năng suất — và cuối cùng là nghỉ việc.</p><div class="pill pill-red inline-block mt-5">Áp lực tài chính</div></div>
+      <div class="card p-7 problem-card fade"><div class="text-4xl mb-5">🧾</div><h3 class="text-xl font-black mb-3">Với HR</h3><p class="text-body">Mỗi yêu cầu tạm ứng tốn HR 30–60 phút: tiếp nhận, xác minh, trình ký, theo dõi hoàn ứng. Với 500 nhân viên, chỉ cần 5% cần tạm ứng mỗi tháng là HR mất hàng chục giờ vô ích.</p><div class="pill pill-gold inline-block mt-5">HR quá tải không đáng</div></div>
+      <div class="card p-7 problem-card fade"><div class="text-4xl mb-5">📉</div><h3 class="text-xl font-black mb-3">Với CEO / CFO</h3><p class="text-body">1 nhân viên nghỉ việc tốn trung bình 6–12 triệu chi phí thay thế. Tăng lương 10% không giải quyết được bài toán “thiếu tiền tháng này”. Và tạm ứng lương thì đụng thẳng vào vốn lưu động.</p><div class="pill pill-blue inline-block mt-5">Tốn tiền nhưng không giữ được người</div></div>
     </div>
   </div>
 </section>
@@ -120,24 +144,24 @@ a{color:inherit;text-decoration:none}
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center max-w-4xl mx-auto mb-14 fade">
       <div class="eyebrow mb-5">02 · Giải pháp</div>
-      <h2 class="title-lg">Vrddi: phúc lợi tài chính <span class="gradient-text">tự vận hành</span> cho lực lượng lao động lớn.</h2>
-      <p class="lead mt-5">Không phải khoản vay. Không phải công ty cho mượn tiền. Vrddi tổ chức nhóm, quản trị pool và tự động hóa quyết định để nhân sự nhận hỗ trợ khi cần.</p>
+      <h2 class="title-lg">Vrddi: nhân viên có tiền khi cần — <span class="gradient-text">doanh nghiệp không bỏ vốn, HR không thêm việc</span>.</h2>
+      <p class="lead mt-5">Nhân viên đóng góp nhỏ mỗi tháng vào một pool chung. Khi có nhu cầu hợp lệ, họ nhận khoản hỗ trợ lớn hơn 10–12 lần — không lãi, không vay, không duyệt thủ công. Doanh nghiệp không bỏ một đồng vốn.</p>
     </div>
     <div class="grid lg:grid-cols-2 gap-10 items-center mobile-stack">
       <div class="fade">
         <div class="orbit">
           <div class="orbit-dot dot-1">Nhân viên<br>tham gia</div>
           <div class="orbit-dot dot-2">Đóng góp<br>hằng tháng</div>
-          <div class="orbit-dot dot-3">Request<br>nhu cầu thật</div>
-          <div class="orbit-dot dot-4">Smart<br>decision</div>
-          <div class="orbit-dot dot-5">Payout<br>0% lãi</div>
-          <div class="orbit-center">Vrddi<br>Engine</div>
+          <div class="orbit-dot dot-3">Nhu cầu<br>thật</div>
+          <div class="orbit-dot dot-4">Xét duyệt<br>tự động</div>
+          <div class="orbit-dot dot-5">Nhận tiền<br>0% lãi</div>
+          <div class="orbit-center">Nền tảng<br>Vrddi</div>
         </div>
       </div>
       <div class="space-y-4 fade">
-        <div class="card p-6 flex gap-4"><div class="step-num">01</div><div><h3 class="text-xl font-black mb-2">Nhân viên bớt gánh lo</h3><p class="text-body">Có thêm điểm tựa tài chính cho các việc quan trọng mà không phải vay lãi.</p></div></div>
-        <div class="card p-6 flex gap-4"><div class="step-num">02</div><div><h3 class="text-xl font-black mb-2">HR không ôm thêm việc</h3><p class="text-body">Dashboard và thuật toán xử lý phần lớn request; HR chỉ can thiệp ở ngoại lệ.</p></div></div>
-        <div class="card p-6 flex gap-4"><div class="step-num">03</div><div><h3 class="text-xl font-black mb-2">Doanh nghiệp không dùng vốn lưu động</h3><p class="text-body">Mô hình không dựa vào quỹ tạm ứng của công ty, không tạo rủi ro nợ xấu như khoản vay.</p></div></div>
+        <div class="card p-6 flex gap-4"><div class="step-num">01</div><div><h3 class="text-xl font-black mb-2">Nhân viên có tiền đúng lúc — không vay, không xấu hổ</h3><p class="text-body">Có điểm tựa tài chính ngay khi cần — không cần vay bên ngoài, không áp lực lãi suất, không cảm giác mang nợ.</p></div></div>
+        <div class="card p-6 flex gap-4"><div class="step-num">02</div><div><h3 class="text-xl font-black mb-2">HR không ôm thêm việc</h3><p class="text-body">99% yêu cầu được xử lý tự động. HR chỉ nhìn vào dashboard — không phải xử lý từng hồ sơ, không thêm quy trình.</p></div></div>
+        <div class="card p-6 flex gap-4"><div class="step-num">03</div><div><h3 class="text-xl font-black mb-2">Doanh nghiệp không bỏ một đồng vốn</h3><p class="text-body">Pool được tạo từ đóng góp của nhân viên — không từ ngân sách công ty. Không có nợ xấu, không rủi ro thu hồi, không ảnh hưởng dòng tiền doanh nghiệp.</p></div></div>
       </div>
     </div>
   </div>
@@ -148,16 +172,62 @@ a{color:inherit;text-decoration:none}
     <div class="grid lg:grid-cols-2 gap-10 items-start mobile-stack">
       <div class="fade">
         <div class="eyebrow mb-5">03 · Điểm khác biệt</div>
-        <h2 class="title-lg mb-6">Một lợi ích đủ dễ hiểu để nhân viên muốn tham gia.</h2>
-        <p class="lead">So với tạm ứng lương hoặc vay cá nhân, Vrddi tạo giá trị ở cả 3 phía: nhân viên thấy lợi ích ngay, HR giảm việc, CEO/CFO kiểm soát tốt hơn.</p>
+        <h2 class="title-lg mb-6">Khác tạm ứng lương. Khác vay tiêu dùng. Đây là phúc lợi giữ chân nhân sự thật sự.</h2>
+        <p class="lead">Tạm ứng lương giải quyết 1 người, 1 lần. Vrddi tạo phúc lợi cho cả lực lượng — nhân viên thấy giá trị ngay, HR giảm tải ngay, doanh nghiệp không bỏ vốn.</p>
       </div>
-      <div class="card-strong compare fade">
-        <div class="compare-row compare-head"><div>Tiêu chí</div><div>Tạm ứng / vay</div><div>Vrddi</div></div>
-        <div class="compare-row"><div data-label="Tiêu chí" class="font-black">Trải nghiệm nhân viên</div><div data-label="Tạm ứng / vay">Chậm, giấy tờ, dễ ngại hỏi</div><div data-label="Vrddi"><span class="check">Nhanh, rõ, không lãi</span></div></div>
-        <div class="compare-row"><div data-label="Tiêu chí" class="font-black">Nguồn chi trả</div><div data-label="Tạm ứng / vay">Vốn công ty hoặc khoản vay</div><div data-label="Vrddi"><span class="check">Pool theo nhóm</span></div></div>
-        <div class="compare-row"><div data-label="Tiêu chí" class="font-black">Workload HR</div><div data-label="Tạm ứng / vay"><span class="cross">Tăng</span></div><div data-label="Vrddi"><span class="check">Giảm nhờ tự động hóa</span></div></div>
-        <div class="compare-row"><div data-label="Tiêu chí" class="font-black">Phạm vi áp dụng</div><div data-label="Tạm ứng / vay">Thường hạn chế</div><div data-label="Vrddi"><span class="check">Có thể mở rộng toàn lực lượng</span></div></div>
-        <div class="compare-row"><div data-label="Tiêu chí" class="font-black">Cảm nhận giá trị</div><div data-label="Tạm ứng / vay">Là nợ hoặc ứng trước</div><div data-label="Vrddi"><span class="check">Là phúc lợi có ích đúng lúc</span></div></div>
+      <div class="card-strong compare-enhanced fade p-4 lg:p-6">
+        <div class="compare-top grid grid-cols-3 gap-3 mb-4">
+          <div class="compare-top-cell muted">Tiêu chí</div>
+          <div class="compare-top-cell old">Tạm ứng / Vay</div>
+          <div class="compare-top-cell vrddi">✨ Vrddi</div>
+        </div>
+        <div class="compare-list">
+          <div class="compare-item"><div class="compare-criterion">Trải nghiệm nhân viên</div><div class="compare-old">Chậm, giấy tờ, dễ ngại hỏi</div><div class="compare-vrddi">Nhanh, tự động, không ngại xin — nhận trong tuần</div></div>
+          <div class="compare-item"><div class="compare-criterion">Nguồn chi trả</div><div class="compare-old">Vốn công ty hoặc khoản vay</div><div class="compare-vrddi">Pool từ đóng góp nhân viên — doanh nghiệp không bỏ vốn</div></div>
+          <div class="compare-item"><div class="compare-criterion">Workload HR</div><div class="compare-old">Tăng thêm mỗi lần có yêu cầu</div><div class="compare-vrddi">Giảm 99% — HR chỉ theo dõi dashboard, không xử lý hồ sơ</div></div>
+          <div class="compare-item"><div class="compare-criterion">Phạm vi áp dụng</div><div class="compare-old">Thường hạn chế theo chính sách</div><div class="compare-vrddi">Mở rộng toàn lực lượng, cấu hình linh hoạt theo nhóm</div></div>
+          <div class="compare-item"><div class="compare-criterion">Cảm nhận của nhân viên</div><div class="compare-old">Là nợ hoặc ứng trước — áp lực trả</div><div class="compare-vrddi">Là phúc lợi thật — nhân viên nhớ, gắn bó, ít nghỉ việc hơn</div></div>
+          <div class="compare-item"><div class="compare-criterion">Rủi ro tài chính doanh nghiệp</div><div class="compare-old">Nợ xấu, thu hồi khó, ảnh hưởng dòng tiền</div><div class="compare-vrddi">Không có — pool từ nhân viên, doanh nghiệp không liên đới</div></div>
+          <div class="compare-item"><div class="compare-criterion">Chi phí ẩn</div><div class="compare-old">Thời gian HR, giấy tờ, rủi ro quản trị</div><div class="compare-vrddi">Gần như bằng 0 — 99% tự động hóa</div></div>
+          <div class="compare-item"><div class="compare-criterion">Tác động retention</div><div class="compare-old">Mờ — không đo được</div><div class="compare-vrddi">Rõ — dashboard theo dõi tỷ lệ tham gia và sự gắn bó</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="roi" class="section bg-white border-y border-slate-200/70">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-4xl mx-auto mb-12 fade">
+      <div class="eyebrow mb-5">04 · ROI cho doanh nghiệp</div>
+      <h2 class="title-lg">Tính nhanh khoản tiết kiệm khi giảm nghỉ việc.</h2>
+      <p class="lead mt-5">ROI tiết kiệm được mô phỏng từ số lượng nhân sự áp dụng, lương trung bình và mức giảm tỷ lệ nghỉ việc sau khi triển khai Vrddi. Mỗi nhân sự nghỉ việc được quy đổi bằng 2 tháng lương do thời gian trống vị trí và chi phí tuyển thay thế.</p>
+    </div>
+    <div class="grid lg:grid-cols-5 gap-8 mobile-stack">
+      <div class="lg:col-span-2 card-strong p-6 lg:p-8 fade">
+        <h3 class="text-2xl font-black mb-6">ROI Calculator</h3>
+        <div class="space-y-5">
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số nhân sự áp dụng</label><span id="roiEmployeeValue" class="pill pill-blue">500 người</span></div><input id="roiEmployees" class="range" type="range" min="50" max="5000" value="500" step="50"></div>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Lương trung bình / tháng</label><span id="roiSalaryValue" class="pill pill-gold">12.000.000đ</span></div><input id="roiSalary" class="range" type="range" min="6000000" max="30000000" value="12000000" step="1000000"></div>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Tỷ lệ nghỉ việc trước Vrddi</label><span id="roiBeforeValue" class="pill pill-red">18%</span></div><input id="roiBefore" class="range" type="range" min="5" max="50" value="18" step="1"></div>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Tỷ lệ nghỉ việc sau Vrddi</label><span id="roiAfterValue" class="pill pill-green">14%</span></div><input id="roiAfter" class="range" type="range" min="0" max="40" value="14" step="1"></div>
+          <p class="text-small">Công thức: nhân sự giữ lại thêm × 2 tháng lương trung bình. Đây là mô phỏng nhanh để CEO/HRD nhìn thấy quy mô tác động.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-3 space-y-5 fade">
+        <div class="result-card p-7 lg:p-9">
+          <div class="grid md:grid-cols-2 gap-7 mobile-two">
+            <div><div class="text-blue-100 font-bold mb-2">Nhân sự giữ lại thêm / năm</div><div id="roiSavedPeople" class="result-number text-4xl lg:text-5xl font-black tracking-tight">20</div><div class="text-blue-100 mt-3">= số nhân sự × chênh lệch tỷ lệ nghỉ việc</div></div>
+            <div><div class="text-blue-100 font-bold mb-2">ROI tiết kiệm ước tính / năm</div><div id="roiSavings" class="result-number text-4xl lg:text-5xl font-black tracking-tight text-amber-200">480 triệu</div><div class="text-blue-100 mt-3">= nhân sự giữ lại × 2 tháng lương</div></div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5 mobile-two">
+          <div class="card p-5"><div class="text-small font-bold">Chi phí thay thế / người</div><div id="roiCostPerExit" class="metric gradient-text mt-2">24 triệu</div></div>
+          <div class="card p-5"><div class="text-small font-bold">Tỷ lệ nghỉ việc giảm</div><div id="roiDelta" class="metric gradient-text mt-2">4%</div></div>
+          <div class="card p-5"><div class="text-small font-bold">Vốn DN bỏ ra</div><div class="metric gradient-text mt-2">0đ</div></div>
+        </div>
+        <div class="card p-6"><h4 class="font-black text-xl mb-2">Thông điệp cho CEO / CFO</h4><p id="roiText" class="text-body">Với 500 nhân sự, nếu tỷ lệ nghỉ việc giảm từ 18% xuống 14%, doanh nghiệp giữ lại thêm khoảng 20 người/năm. Với lương trung bình 12.000.000đ, khoản tiết kiệm ước tính là 480 triệu đồng/năm.</p></div>
       </div>
     </div>
   </div>
@@ -166,33 +236,33 @@ a{color:inherit;text-decoration:none}
 <section id="demo" class="section bg-slate-50 border-y border-slate-200/70">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center max-w-4xl mx-auto mb-12 fade">
-      <div class="eyebrow mb-5">04 · Demo tính toán</div>
-      <h2 class="title-lg">Thấy ngay: đóng nhỏ hằng tháng, nhận khoản lớn khi cần.</h2>
-      <p class="lead mt-5">Ví dụ gốc của Vrddi: nhóm 12 người, mỗi người đóng 250 USD/tháng, pool tạo ra 3.000 USD. Khi có 1 request hợp lệ, người đó có thể nhận 3.000 USD — tương đương 12x khoản đóng.</p>
+      <div class="eyebrow mb-5">05 · Demo tính toán</div>
+      <h2 class="title-lg">Nhân viên đóng 500K/tháng — nhận được 6 triệu khi cần. Không lãi. Không vay ai.</h2>
+      <p class="lead mt-5">Nhóm 12 nhân viên, mỗi người đóng 500.000đ/tháng → pool 6 triệu đồng. Khi 1 người có nhu cầu hợp lệ, họ nhận ngay 6 triệu — gấp 12 lần số họ đã bỏ vào. Tháng sau họ lại đóng bình thường. Không ai mang nợ. <a class="font-black text-blue-700 underline decoration-blue-200 underline-offset-4" href="https://www.youtube.com/watch?v=DwW145VBNS0" target="_blank" rel="noopener">Xem video demo 2 phút</a>.</p>
     </div>
     <div class="grid lg:grid-cols-5 gap-8 mobile-stack">
       <div class="lg:col-span-2 card-strong p-6 lg:p-8 fade">
-        <h3 class="text-2xl font-black mb-6">Group Payout Calculator</h3>
+        <div class="flex items-center justify-between gap-4 mb-6"><h3 class="text-2xl font-black">Tính ngay: nhóm bạn nhận được bao nhiêu?</h3><div class="currency-toggle"><button class="active" type="button" onclick="displayCurrency='VND';this.classList.add('active');this.nextElementSibling.classList.remove('active');updateDemo();">VND</button><button type="button" onclick="displayCurrency='USD';this.classList.add('active');this.previousElementSibling.classList.remove('active');updateDemo();">USD</button></div></div>
         <div class="space-y-5">
-          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số người trong group</label><span id="groupValue" class="pill pill-blue">12 người</span></div><input id="groupSize" class="range" type="range" min="6" max="24" value="12" step="1"></div>
-          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Đóng góp hằng tháng</label><span id="contributionValue" class="pill pill-gold">250 USD</span></div><input id="monthlyContribution" class="range" type="range" min="50" max="1000" value="250" step="50"></div>
-          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số người request/tháng</label><span id="requestValue" class="pill pill-green">1 người</span></div><input id="requestCount" class="range" type="range" min="1" max="4" value="1" step="1"></div>
-          <p class="text-small">Demo dùng để hình dung logic pool. Thực tế triển khai sẽ được cấu hình theo chính sách, điều kiện và dữ liệu của từng doanh nghiệp.</p>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số nhân viên trong nhóm</label><span id="groupValue" class="pill pill-blue">12 người</span></div><input id="groupSize" class="range" type="range" min="6" max="24" value="12" step="1"></div>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Đóng góp hằng tháng</label><span id="contributionValue" class="pill pill-gold">500.000đ</span></div><input id="monthlyContribution" class="range" type="range" min="300000" max="1000000" value="500000" step="100000"></div>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số người cần hỗ trợ mỗi tháng</label><span id="requestValue" class="pill pill-green">1 người</span></div><input id="requestCount" class="range" type="range" min="1" max="4" value="1" step="1"></div>
+          <p class="text-small">Con số trên là ví dụ minh họa. Khi triển khai thực tế, mức đóng góp và điều kiện sẽ được cấu hình riêng cho từng doanh nghiệp.</p>
         </div>
       </div>
       <div class="lg:col-span-3 space-y-5 fade">
         <div class="result-card p-7 lg:p-9">
           <div class="grid md:grid-cols-2 gap-7 mobile-two">
-            <div><div class="text-blue-100 font-bold mb-2">Tổng pool mỗi tháng</div><div id="poolResult" class="result-number text-4xl lg:text-5xl font-black tracking-tight">3,000 USD</div><div class="text-blue-100 mt-3">= số người × khoản đóng</div></div>
-            <div><div class="text-blue-100 font-bold mb-2">Một người nhận khi request</div><div id="payoutResult" class="result-number text-4xl lg:text-5xl font-black tracking-tight text-amber-200">3,000 USD</div><div id="multipleResult" class="text-blue-100 mt-3">Tương đương 12x khoản đóng hằng tháng</div></div>
+            <div><div class="text-blue-100 font-bold mb-2">Tổng quỹ hỗ trợ mỗi tháng</div><div id="poolResult" class="result-number text-4xl lg:text-5xl font-black tracking-tight">6.000.000đ</div><div class="text-blue-100 mt-3">= số người × khoản đóng</div></div>
+            <div><div class="text-blue-100 font-bold mb-2">Một người nhận được khi cần</div><div id="payoutResult" class="result-number text-4xl lg:text-5xl font-black tracking-tight text-amber-200">6.000.000đ</div><div id="multipleResult" class="text-blue-100 mt-3">Tương đương 12x khoản đóng hằng tháng · ~240 USD</div></div>
           </div>
         </div>
         <div class="grid md:grid-cols-3 gap-5 mobile-two">
           <div class="card p-5"><div class="text-small font-bold">Người nhận trong tháng</div><div id="peoplePaid" class="metric gradient-text mt-2">1</div></div>
-          <div class="card p-5"><div class="text-small font-bold">Tổng chi trả mô phỏng</div><div id="totalPayout" class="metric gradient-text mt-2">3,000</div></div>
+          <div class="card p-5"><div class="text-small font-bold">Tổng chi trả mô phỏng</div><div id="totalPayout" class="metric gradient-text mt-2">6 triệu</div></div>
           <div class="card p-5"><div class="text-small font-bold">Lãi suất nhân viên</div><div class="metric gradient-text mt-2">0%</div></div>
         </div>
-        <div class="card p-6"><h4 class="font-black text-xl mb-2">Thông điệp dễ nhớ</h4><p id="cvpText" class="text-body">Với 12 người trong group, mỗi người đóng 250 USD/tháng. Khi có nhu cầu hợp lệ, một nhân sự có thể nhận 3.000 USD — gấp 12 lần khoản đóng hằng tháng — không lãi suất, không tạo khoản vay cá nhân.</p></div>
+        <div class="card p-6"><h4 class="font-black text-xl mb-2">Thông điệp dễ nhớ</h4><p id="cvpText" class="text-body">12 nhân viên, mỗi người đóng 500.000đ/tháng. Khi cần — một người nhận ngay 6.000.000đ, gấp 12 lần. Không lãi. Không nợ. Không xin ai.</p></div>
       </div>
     </div>
   </div>
@@ -202,11 +272,11 @@ a{color:inherit;text-decoration:none}
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid lg:grid-cols-2 gap-10 items-start mobile-stack">
       <div class="fade">
-        <div class="eyebrow mb-5">05 · Use cases</div>
-        <h2 class="title-lg mb-6">Phúc lợi có giá trị nhất khi chạm đúng việc thật.</h2>
+        <div class="eyebrow mb-5">06 · Nhân viên dùng vào việc gì?</div>
+        <h2 class="title-lg mb-6">Đây là những việc nhân viên không dám hỏi HR — nhưng Vrddi lo được.</h2>
         <p class="lead mb-7">Vrddi tập trung vào các thời điểm tài chính nhạy cảm: lúc nhân viên cần tiền để lo cho sức khỏe, con cái, nhà cửa hoặc gia đình.</p>
         <div class="card p-6">
-          <div class="font-black text-xl mb-4">Danh mục được sử dụng nhiều</div>
+          <div class="font-black text-xl mb-4">Nhân viên thường dùng hỗ trợ cho:</div>
           <div class="space-y-4">
             <div><div class="flex justify-between font-bold text-sm mb-2"><span>Y tế</span><span>41%</span></div><div class="mini-chart"><div class="mini-fill" style="width:41%"></div></div></div>
             <div><div class="flex justify-between font-bold text-sm mb-2"><span>Giáo dục</span><span>38%</span></div><div class="mini-chart"><div class="mini-fill" style="width:38%"></div></div></div>
@@ -215,8 +285,8 @@ a{color:inherit;text-decoration:none}
         </div>
       </div>
       <div class="grid sm:grid-cols-2 gap-5 fade">
-        <div class="usecase"><div class="text-3xl mb-4">🏥</div><h3 class="font-black text-xl mb-2">Y tế</h3><p class="text-small">Nhập viện, thuốc, xét nghiệm, xe cấp cứu, chăm sóc tại nhà, chạy thận, hóa trị.</p></div>
-        <div class="usecase"><div class="text-3xl mb-4">🎓</div><h3 class="font-black text-xl mb-2">Giáo dục</h3><p class="text-small">Học phí, phí nhập học, sách vở, đồng phục, thiết bị học tập.</p></div>
+        <div class="usecase"><div class="text-3xl mb-4">🏥</div><h3 class="font-black text-xl mb-2">Y tế</h3><p class="text-small">Viện phí không báo trước — khoản lớn nhất mà nhân viên không chuẩn bị được. Nhập viện, thuốc, xét nghiệm, xe cấp cứu, chăm sóc tại nhà, chạy thận, hóa trị.</p></div>
+        <div class="usecase"><div class="text-3xl mb-4">🎓</div><h3 class="font-black text-xl mb-2">Giáo dục</h3><p class="text-small">Đầu năm học — khoản chi mà mọi phụ huynh đều căng thẳng. Học phí, phí nhập học, sách vở, đồng phục, thiết bị học tập.</p></div>
         <div class="usecase"><div class="text-3xl mb-4">🏠</div><h3 class="font-black text-xl mb-2">Nhà cửa</h3><p class="text-small">Sửa mái, nhà vệ sinh, bếp, bể nước, thiết bị gia dụng thiết yếu.</p></div>
         <div class="usecase"><div class="text-3xl mb-4">🤝</div><h3 class="font-black text-xl mb-2">Gia đình</h3><p class="text-small">Đám cưới, nghĩa vụ gia đình, lễ hội, từ thiện, hoạt động cộng đồng.</p></div>
       </div>
@@ -227,20 +297,20 @@ a{color:inherit;text-decoration:none}
 <section id="proof" class="section bg-white border-y border-slate-200/70">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center max-w-4xl mx-auto mb-12 fade">
-      <div class="eyebrow mb-5">06 · Số liệu vận hành</div>
-      <h2 class="title-lg">Không chỉ là concept. Vrddi đã có traction thật.</h2>
+      <div class="eyebrow mb-5">07 · Số liệu vận hành</div>
+      <h2 class="title-lg">Đây không phải ý tưởng. Vrddi đã vận hành thực tế — và con số chứng minh điều đó.</h2>
       <p class="lead mt-5">Các số liệu dưới đây được tóm tắt từ tài liệu giới thiệu Vrddi: giao dịch đã thực hiện, pipeline, đối tác payroll và mức độ tự động hóa.</p>
     </div>
     <div class="grid lg:grid-cols-4 gap-6 mobile-stack">
-      <div class="card-strong p-6 fade"><div class="pill pill-blue inline-block mb-4">Transactions</div><div class="metric gradient-text">2.700+</div><p class="text-small font-bold mt-3">giao dịch đã thực hiện từ khi ra mắt.</p></div>
-      <div class="card-strong p-6 fade"><div class="pill pill-gold inline-block mb-4">Pipeline</div><div class="metric gradient-text">96.000</div><p class="text-small font-bold mt-3">giao dịch trong pipeline.</p></div>
-      <div class="card-strong p-6 fade"><div class="pill pill-green inline-block mb-4">Payroll partner</div><div class="metric gradient-text">45.000</div><p class="text-small font-bold mt-3">nhân viên qua hợp tác SumoPayroll.</p></div>
-      <div class="card-strong p-6 fade"><div class="pill pill-blue inline-block mb-4">Automation</div><div class="metric gradient-text">99%</div><p class="text-small font-bold mt-3">auto group & decision making.</p></div>
+      <div class="card-strong p-6 fade"><div class="pill pill-blue inline-block mb-4">Transactions</div><div class="metric gradient-text">2.700+</div><p class="text-small font-bold mt-3">giao dịch thành công — mỗi giao dịch là 1 nhân viên đã được hỗ trợ đúng lúc.</p></div>
+      <div class="card-strong p-6 fade"><div class="pill pill-gold inline-block mb-4">Pipeline</div><div class="metric gradient-text">96.000</div><p class="text-small font-bold mt-3">giao dịch đang trong hệ thống — traction đang tăng nhanh.</p></div>
+      <div class="card-strong p-6 fade"><div class="pill pill-green inline-block mb-4">Payroll partner</div><div class="metric gradient-text">45.000</div><p class="text-small font-bold mt-3">nhân viên tiếp cận qua đối tác SumoPayroll.</p></div>
+      <div class="card-strong p-6 fade"><div class="pill pill-blue inline-block mb-4">Automation</div><div class="metric gradient-text">99%</div><p class="text-small font-bold mt-3">xử lý tự động — HR gần như không phải làm gì.</p></div>
     </div>
     <div class="grid lg:grid-cols-3 gap-6 mt-6 mobile-stack">
-      <div class="card p-6 fade"><h3 class="font-black text-xl mb-2">Đang hoạt động tại Việt Nam</h3><p class="text-body">Phù hợp để pilot với doanh nghiệp đông nhân sự, nhiều ca vận hành và nhu cầu phúc lợi rõ.</p></div>
-      <div class="card p-6 fade"><h3 class="font-black text-xl mb-2">Đã mở rộng quốc tế</h3><p class="text-body">Tài liệu ghi nhận approval từ Central Banks tại Bahrain và Qatar.</p></div>
-      <div class="card p-6 fade"><h3 class="font-black text-xl mb-2">ROI employer 60x</h3><p class="text-body">Vrddi nêu ROI 60x, 0 working capital spent và 98% group stability factor.</p></div>
+      <div class="card p-6 fade"><h3 class="font-black text-xl mb-2">Đang hoạt động tại Việt Nam</h3><p class="text-body">Đang pilot tại Việt Nam. Phù hợp nhất với doanh nghiệp trên 200 nhân viên có nhiều ca vận hành — BPO, bán lẻ, y tế, logistics.</p></div>
+      <div class="card p-6 fade"><h3 class="font-black text-xl mb-2">Đã mở rộng quốc tế</h3><p class="text-body">Được cấp phép bởi Ngân hàng Trung ương Bahrain và Qatar — nền tảng đạt chuẩn quốc tế.</p></div>
+      <div class="card p-6 fade"><h3 class="font-black text-xl mb-2">ROI employer 60x</h3><p class="text-body">ROI 60x cho doanh nghiệp: 0 đồng vốn bỏ ra, 98% nhóm vận hành ổn định.</p></div>
     </div>
   </div>
 </section>
@@ -253,13 +323,13 @@ a{color:inherit;text-decoration:none}
         <div>
           <div class="eyebrow mb-5">Pilot cho doanh nghiệp</div>
           <h2 class="title-lg mb-5">Bắt đầu nhỏ. Đo nhanh. Mở rộng khi thấy hiệu quả.</h2>
-          <p class="lead">Nên pilot với nhóm có nhu cầu rõ: vận hành, bán lẻ, F&B, logistics, manufacturing hoặc nhóm thu nhập trung bình. Mục tiêu là tạo “wow moment”, đo adoption và chứng minh HR không tăng tải.</p>
+          <p class="lead">Pilot lý tưởng: 50–300 nhân viên thuộc nhóm vận hành, bán lẻ, F&B hoặc logistics. Trong 2 tuần đầu — nhân viên nhận lần đầu, HR thấy dashboard chạy tự động, lãnh đạo thấy số thật. Không cần thay đổi hệ thống hiện có.</p>
         </div>
         <div class="space-y-4">
-          <div class="card p-5 flex gap-4"><div class="step-num">1</div><div><h3 class="font-black">Chọn nhóm pilot</h3><p class="text-small">50–300 nhân sự hoặc theo đơn vị kinh doanh.</p></div></div>
-          <div class="card p-5 flex gap-4"><div class="step-num">2</div><div><h3 class="font-black">Cấu hình rule & payroll data</h3><p class="text-small">Xác định group, mức đóng, danh mục request và quyền phê duyệt.</p></div></div>
-          <div class="card p-5 flex gap-4"><div class="step-num">3</div><div><h3 class="font-black">Theo dõi dashboard</h3><p class="text-small">Adoption, request, thời gian xử lý, group stability và feedback.</p></div></div>
-          <a href="mailto:contactus@vrddi.com" class="btn-primary px-6 py-4 rounded-2xl font-black w-full">Liên hệ demo: contactus@vrddi.com</a>
+          <div class="card p-5 flex gap-4"><div class="step-num">1</div><div><h3 class="font-black">Chọn nhóm pilot</h3><p class="text-small">50–300 nhân viên, chọn nhóm có nhu cầu rõ nhất. Vrddi sẽ gợi ý nhóm phù hợp dựa trên profile doanh nghiệp.</p></div></div>
+          <div class="card p-5 flex gap-4"><div class="step-num">2</div><div><h3 class="font-black">Kết nối dữ liệu nhân sự</h3><p class="text-small">Vrddi kết nối với hệ thống nhân sự hiện có trong 1–2 ngày. Đội ngũ Vrddi hỗ trợ toàn bộ — HR không cần làm thêm.</p></div></div>
+          <div class="card p-5 flex gap-4"><div class="step-num">3</div><div><h3 class="font-black">Theo dõi dashboard</h3><p class="text-small">Dashboard thời gian thực: tỷ lệ tham gia, số yêu cầu, tốc độ xử lý. CEO/HRD xem được báo cáo tác động ngay tuần đầu.</p></div></div>
+          <a href="mailto:contactus@vrddi.vn" class="btn-primary px-6 py-4 rounded-2xl font-black w-full">Đăng ký demo 30 phút — nhận đề xuất pilot trong 24h</a>
         </div>
       </div>
     </div>
@@ -267,10 +337,219 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <footer class="py-9 text-center text-slate-500 border-t border-slate-200 bg-white">
-  <div class="max-w-7xl mx-auto px-6"><div class="font-black text-slate-900 text-xl mb-2">Vrddi</div><div class="text-small">Phúc lợi tài chính linh hoạt cho doanh nghiệp — không vay, không lãi suất, không tăng scope vận hành HR.</div></div>
+  <div class="max-w-7xl mx-auto px-6"><div class="font-black text-slate-900 text-xl mb-2">Vrddi</div><div class="text-small">Giữ chân nhân sự mà không tăng lương — không bỏ vốn, không tăng việc cho HR.</div></div>
 </footer>
 
 <script>
+
+let currentLang = 'vi';
+const I18N = {
+  "Phúc lợi Sức khỏe Tài chính nhân sự": "Employee Financial Wellness Benefit",
+  "Nhân sự nghỉ việc": "Attrition pain",
+  "Giải pháp": "Solution",
+  "Demo": "Demo",
+  "Minh chứng": "Proof",
+  "Pilot": "Pilot",
+  "Tính ROI": "Calculate ROI",
+  "Đã vận hành tại Ấn Độ, Bahrain, Qatar — Đang pilot tại Việt Nam": "Operating in India, Bahrain and Qatar — now piloting in Vietnam",
+  "Giữ người không cần tăng lương.": "Retain people without raising salaries.",
+  "Nhân viên có tiền khi cần": "Employees get money when they need it",
+  "— không vay, không lãi.": "— no loan, no interest.",
+  "Mỗi tháng nhân viên đóng một khoản nhỏ. Khi có việc gấp — viện phí, học phí, sửa nhà — họ nhận hỗ trợ lớn hơn": "Each month, employees contribute a small amount. When urgent needs arise — medical bills, tuition, home repairs — they can receive support worth",
+  "10–12 lần": "10–12x",
+  ", ngay trong kỳ lương. Doanh nghiệp không bỏ vốn. HR không tăng việc.": "within the pay cycle. The company uses no working capital. HR gets no extra workload.",
+  "Tính ROI cho doanh nghiệp của bạn": "Calculate ROI for your company",
+  "Xem demo thực tế (2 phút)": "Watch the 2-minute demo",
+  "lãi — nhân viên nhận, không phải vay": "interest — employees receive support, not debt",
+  "tự động — HR không cần xử lý thủ công": "automated — HR avoids manual processing",
+  "vốn doanh nghiệp bỏ ra": "company working capital required",
+  "Cách vận hành — 3 bước": "How it works — 3 steps",
+  "3 bước từ đóng góp → nhận tiền — không qua ai duyệt.": "Three steps from contribution → payout — without manual approval.",
+  "Live model": "Live model",
+  "Nhân viên có việc bất ngờ cần tiền": "Employees face unexpected money needs",
+  "Viện phí đột xuất, học phí đầu năm, sửa nhà — những khoản không thể đợi đến 2 tháng lương tới.": "Unexpected medical bills, school fees and home repairs cannot wait for the next two paychecks.",
+  "Hệ thống xử lý thay HR": "The system handles it for HR",
+  "Hệ thống kiểm tra điều kiện và gợi ý quyết định — không cần HR xem từng hồ sơ.": "The system checks eligibility and recommends decisions — HR does not review every case.",
+  "Nhận 10–12x khoản đóng — ngay trong kỳ lương gần nhất": "Receive 10–12x the contribution — within the nearest payroll cycle",
+  "Nhân viên cảm nhận được doanh nghiệp quan tâm thật sự — không phải vay nợ, không áp lực trả.": "Employees feel genuine support from the company — no debt, no repayment pressure.",
+  "01 · Nỗi đau thật": "01 · Real pain",
+  "Nhân sự không nghỉ vì lương thấp — họ nghỉ vì": "Employees do not only leave because of low pay — they leave because of",
+  "thiếu tiền đúng lúc": "cash shortage at the wrong moment",
+  "Khi thiếu tiền trước kỳ lương, nhân viên không báo HR. Họ âm thầm vay tín dụng đen, mượn đồng nghiệp — hoặc bắt đầu nhìn sang chỗ khác hoặc làm thêm nhiều việc. Doanh nghiệp thường chỉ biết khi họ đã nộp đơn nghỉ.": "When employees run out of money before payday, they rarely tell HR. They quietly borrow at high rates, ask colleagues for help, look for side jobs, or start looking elsewhere. Companies often only know when the resignation arrives.",
+  "Với nhân viên": "For employees",
+  "Một khoản chi 20–30 triệu có thể kéo nhân viên vào vòng xoay vay lãi, mất ngủ, giảm năng suất — và cuối cùng là nghỉ việc.": "A sudden 20–30 million VND expense can pull an employee into high-interest debt, sleeplessness, lower productivity — and eventually resignation.",
+  "Áp lực tài chính": "Financial stress",
+  "Với HR": "For HR",
+  "Mỗi yêu cầu tạm ứng tốn HR 30–60 phút: tiếp nhận, xác minh, trình ký, theo dõi hoàn ứng. Với 500 nhân viên, chỉ cần 5% cần tạm ứng mỗi tháng là HR mất hàng chục giờ vô ích.": "Each salary advance request can cost HR 30–60 minutes: intake, verification, approval and tracking. In a 500-person company, if only 5% request advances monthly, HR loses dozens of hours.",
+  "HR quá tải không đáng": "Unnecessary HR overload",
+  "Với CEO / CFO": "For CEO / CFO",
+  "1 nhân viên nghỉ việc tốn trung bình 6–12 triệu chi phí thay thế. Tăng lương 10% không giải quyết được bài toán “thiếu tiền tháng này”. Và tạm ứng lương thì đụng thẳng vào vốn lưu động.": "One resignation can cost 6–12 million VND to replace. A 10% raise does not solve the “I need money this month” problem. Salary advances directly affect working capital.",
+  "Tốn tiền nhưng không giữ được người": "Spending more without retaining people",
+  "02 · Giải pháp": "02 · Solution",
+  "Vrddi: nhân viên có tiền khi cần —": "Vrddi: employees get money when they need it —",
+  "doanh nghiệp không bỏ vốn, HR không thêm việc": "no company capital, no extra HR work",
+  "Nhân viên đóng góp nhỏ mỗi tháng vào một pool chung. Khi có nhu cầu hợp lệ, họ nhận khoản hỗ trợ lớn hơn 10–12 lần — không lãi, không vay, không duyệt thủ công. Doanh nghiệp không bỏ một đồng vốn.": "Employees make a small monthly contribution into a shared pool. When an eligible need arises, they receive 10–12x support — no interest, no loan, no manual approval. The company contributes no working capital.",
+  "Nhân viên": "Employee",
+  "tham gia": "joins",
+  "Đóng góp": "Monthly",
+  "hằng tháng": "contribution",
+  "Nhu cầu": "Real",
+  "thật": "need",
+  "Xét duyệt": "Automated",
+  "tự động": "decision",
+  "Nhận tiền": "0% interest",
+  "0% lãi": "payout",
+  "Nền tảng": "Vrddi",
+  "Nhân viên có tiền đúng lúc — không vay, không xấu hổ": "Employees get money at the right time — no loan, no embarrassment",
+  "Có điểm tựa tài chính ngay khi cần — không cần vay bên ngoài, không áp lực lãi suất, không cảm giác mang nợ.": "A financial safety net when needed — no external borrowing, no interest pressure, no debt stigma.",
+  "HR không ôm thêm việc": "HR does not take on more work",
+  "99% yêu cầu được xử lý tự động. HR chỉ nhìn vào dashboard — không phải xử lý từng hồ sơ, không thêm quy trình.": "99% of requests are processed automatically. HR monitors the dashboard instead of handling every file.",
+  "Doanh nghiệp không bỏ một đồng vốn": "The company uses zero working capital",
+  "Pool được tạo từ đóng góp của nhân viên — không từ ngân sách công ty. Không có nợ xấu, không rủi ro thu hồi, không ảnh hưởng dòng tiền doanh nghiệp.": "The pool is created by employee contributions, not the company budget. No bad debt, no collection risk, no impact on company cash flow.",
+  "03 · Điểm khác biệt": "03 · What makes Vrddi different",
+  "Khác tạm ứng lương. Khác vay tiêu dùng. Đây là phúc lợi giữ chân nhân sự thật sự.": "Not salary advance. Not consumer lending. A real retention benefit.",
+  "Tạm ứng lương giải quyết 1 người, 1 lần. Vrddi tạo phúc lợi cho cả lực lượng — nhân viên thấy giá trị ngay, HR giảm tải ngay, doanh nghiệp không bỏ vốn.": "Salary advances help one person once. Vrddi creates a workforce-wide benefit — employees feel the value, HR workload drops, and the business uses no capital.",
+  "Tiêu chí": "Criteria",
+  "Tạm ứng / Vay": "Advance / Loan",
+  "✨ Vrddi": "✨ Vrddi",
+  "Trải nghiệm nhân viên": "Employee experience",
+  "Chậm, giấy tờ, dễ ngại hỏi": "Slow, paperwork-heavy, awkward to ask",
+  "Nhanh, tự động, không ngại xin — nhận trong tuần": "Fast, automated and stigma-free — received within the week",
+  "Nguồn chi trả": "Funding source",
+  "Vốn công ty hoặc khoản vay": "Company capital or loan",
+  "Pool từ đóng góp nhân viên — doanh nghiệp không bỏ vốn": "Pool from employee contributions — no company capital",
+  "Workload HR": "HR workload",
+  "Tăng thêm mỗi lần có yêu cầu": "Increases with every request",
+  "Giảm 99% — HR chỉ theo dõi dashboard, không xử lý hồ sơ": "Reduced by 99% — HR tracks the dashboard, not files",
+  "Phạm vi áp dụng": "Coverage",
+  "Thường hạn chế theo chính sách": "Often limited by policy",
+  "Mở rộng toàn lực lượng, cấu hình linh hoạt theo nhóm": "Scales across the workforce, configurable by group",
+  "Cảm nhận của nhân viên": "Employee perception",
+  "Là nợ hoặc ứng trước — áp lực trả": "Feels like debt or advance — repayment pressure",
+  "Là phúc lợi thật — nhân viên nhớ, gắn bó, ít nghỉ việc hơn": "Feels like a real benefit — memorable, sticky and retention-oriented",
+  "Rủi ro tài chính doanh nghiệp": "Financial risk for the business",
+  "Nợ xấu, thu hồi khó, ảnh hưởng dòng tiền": "Bad debt, collection risk, cash-flow impact",
+  "Không có — pool từ nhân viên, doanh nghiệp không liên đới": "None — employee-funded pool, no business liability",
+  "Chi phí ẩn": "Hidden costs",
+  "Thời gian HR, giấy tờ, rủi ro quản trị": "HR time, paperwork and governance risk",
+  "Gần như bằng 0 — 99% tự động hóa": "Near zero — 99% automation",
+  "Tác động retention": "Retention impact",
+  "Mờ — không đo được": "Unclear and hard to measure",
+  "Rõ — dashboard theo dõi tỷ lệ tham gia và sự gắn bó": "Clear — dashboard tracks adoption and engagement",
+  "04 · ROI cho doanh nghiệp": "04 · Employer ROI",
+  "Tính nhanh khoản tiết kiệm khi giảm nghỉ việc.": "Quickly estimate savings from lower attrition.",
+  "ROI tiết kiệm được mô phỏng từ số lượng nhân sự áp dụng, lương trung bình và mức giảm tỷ lệ nghỉ việc sau khi triển khai Vrddi. Mỗi nhân sự nghỉ việc được quy đổi bằng 2 tháng lương do thời gian trống vị trí và chi phí tuyển thay thế.": "Estimated ROI is based on covered employees, average salary and attrition reduction after Vrddi. Each avoided resignation is valued at two months of salary for vacancy and replacement costs.",
+  "ROI Calculator": "ROI Calculator",
+  "Số nhân sự áp dụng": "Covered employees",
+  "Lương trung bình / tháng": "Average monthly salary",
+  "Tỷ lệ nghỉ việc trước Vrddi": "Attrition before Vrddi",
+  "Tỷ lệ nghỉ việc sau Vrddi": "Attrition after Vrddi",
+  "Công thức: nhân sự giữ lại thêm × 2 tháng lương trung bình. Đây là mô phỏng nhanh để CEO/HRD nhìn thấy quy mô tác động.": "Formula: extra retained employees × 2 months of average salary. A quick model for CEO/HRD to see impact scale.",
+  "Nhân sự giữ lại thêm / năm": "Extra employees retained / year",
+  "= số nhân sự × chênh lệch tỷ lệ nghỉ việc": "= employees × attrition reduction",
+  "ROI tiết kiệm ước tính / năm": "Estimated annual savings",
+  "= nhân sự giữ lại × 2 tháng lương": "= retained employees × 2 months salary",
+  "Chi phí thay thế / người": "Replacement cost / person",
+  "Tỷ lệ nghỉ việc giảm": "Attrition reduction",
+  "Vốn DN bỏ ra": "Company capital",
+  "Thông điệp cho CEO / CFO": "Message for CEO / CFO",
+  "05 · Demo tính toán": "05 · Payout demo",
+  "Nhân viên đóng 500K/tháng — nhận được 6 triệu khi cần. Không lãi. Không vay ai.": "Employees contribute 500K/month — and can receive 6 million when needed. No interest. No loan.",
+  "Nhóm 12 nhân viên, mỗi người đóng 500.000đ/tháng → pool 6 triệu đồng. Khi 1 người có nhu cầu hợp lệ, họ nhận ngay 6 triệu — gấp 12 lần số họ đã bỏ vào. Tháng sau họ lại đóng bình thường. Không ai mang nợ.": "A group of 12 employees contributes 500,000 VND each month → a 6 million VND pool. When one eligible need arises, the employee receives 6 million — 12x their contribution. The next month, contributions continue normally. No one carries debt.",
+  "Xem video demo 2 phút": "Watch the 2-minute demo",
+  "Tính ngay: nhóm bạn nhận được bao nhiêu?": "Calculate how much your group can receive",
+  "Số nhân viên trong nhóm": "Employees in group",
+  "Đóng góp hằng tháng": "Monthly contribution",
+  "Số người cần hỗ trợ mỗi tháng": "Employees needing support monthly",
+  "Con số trên là ví dụ minh họa. Khi triển khai thực tế, mức đóng góp và điều kiện sẽ được cấu hình riêng cho từng doanh nghiệp.": "This is an illustrative example. In deployment, contribution levels and eligibility rules are configured for each company.",
+  "Tổng quỹ hỗ trợ mỗi tháng": "Monthly support pool",
+  "= số người × khoản đóng": "= employees × contribution",
+  "Một người nhận được khi cần": "Amount one employee receives",
+  "Tương đương 12x khoản đóng hằng tháng · ~240 USD": "Equivalent to 12x the monthly contribution · ~240 USD",
+  "Người nhận trong tháng": "Recipients this month",
+  "Tổng chi trả mô phỏng": "Simulated total payout",
+  "Lãi suất nhân viên": "Employee interest rate",
+  "Thông điệp dễ nhớ": "Simple message",
+  "06 · Nhân viên dùng vào việc gì?": "06 · What do employees use it for?",
+  "Đây là những việc nhân viên không dám hỏi HR — nhưng Vrddi lo được.": "These are the needs employees hesitate to ask HR about — but Vrddi can support.",
+  "Vrddi tập trung vào các thời điểm tài chính nhạy cảm: lúc nhân viên cần tiền để lo cho sức khỏe, con cái, nhà cửa hoặc gia đình.": "Vrddi focuses on financially sensitive moments: health, children, home and family needs.",
+  "Nhân viên thường dùng hỗ trợ cho:": "Common support categories:",
+  "Y tế": "Healthcare",
+  "Giáo dục": "Education",
+  "Cải thiện nhà cửa": "Home improvement",
+  "Viện phí không báo trước — khoản lớn nhất mà nhân viên không chuẩn bị được. Nhập viện, thuốc, xét nghiệm, xe cấp cứu, chăm sóc tại nhà, chạy thận, hóa trị.": "Unexpected hospital costs — often the largest unplanned expense. Hospital deposit, medicine, tests, ambulance, home care, dialysis and chemotherapy.",
+  "Đầu năm học — khoản chi mà mọi phụ huynh đều căng thẳng. Học phí, phí nhập học, sách vở, đồng phục, thiết bị học tập.": "Back-to-school expenses — a stressful moment for every parent. Tuition, admission fees, books, uniforms and learning devices.",
+  "Nhà cửa": "Home",
+  "Sửa mái, nhà vệ sinh, bếp, bể nước, thiết bị gia dụng thiết yếu.": "Roof repairs, bathroom, kitchen, water tank and essential home appliances.",
+  "Gia đình": "Family",
+  "Đám cưới, nghĩa vụ gia đình, lễ hội, từ thiện, hoạt động cộng đồng.": "Weddings, family obligations, festivals, charity and community activities.",
+  "07 · Số liệu vận hành": "07 · Operating proof",
+  "Đây không phải ý tưởng. Vrddi đã vận hành thực tế — và con số chứng minh điều đó.": "This is not a concept. Vrddi is operating — and the numbers prove it.",
+  "Các số liệu dưới đây được tóm tắt từ tài liệu giới thiệu Vrddi: giao dịch đã thực hiện, pipeline, đối tác payroll và mức độ tự động hóa.": "The numbers below summarize Vrddi materials: transactions completed, pipeline, payroll partner and automation level.",
+  "Yêu cầu thành công — mỗi Yêu cầu là 1 nhân viên được hỗ trợ đúng lúc.": "successful transactions — employees supported financially at the right time.",
+  "giao dịch đang trong hệ thống — traction đang tăng nhanh.": "transactions in the pipeline — traction is growing quickly.",
+  "nhân viên tiếp cận qua đối tác SumoPayroll.": "employees accessed through SumoPayroll partnership.",
+  "xử lý tự động — HR gần như không phải làm gì.": "automated processing — HR does almost nothing.",
+  "Đang hoạt động tại Việt Nam": "Operating in Vietnam",
+  "Đang pilot tại Việt Nam. Phù hợp nhất với doanh nghiệp trên 200 nhân viên có nhiều ca vận hành — BPO, bán lẻ, y tế, logistics.": "Now piloting in Vietnam. Best suited for companies with 200+ employees and shift-based operations — BPO, retail, healthcare and logistics.",
+  "Đã mở rộng quốc tế": "International expansion",
+  "Được cấp phép bởi Ngân hàng Trung ương Bahrain và Qatar — nền tảng đạt chuẩn quốc tế.": "Approved by the Central Banks of Bahrain and Qatar — built to international standards.",
+  "ROI 60x cho doanh nghiệp: 0 đồng vốn bỏ ra, 98% nhóm vận hành ổn định.": "60x employer ROI: zero working capital, 98% group stability.",
+  "Pilot cho doanh nghiệp": "Enterprise pilot",
+  "Bắt đầu nhỏ. Đo nhanh. Mở rộng khi thấy hiệu quả.": "Start small. Measure fast. Scale after proof.",
+  "Pilot lý tưởng: 50–300 nhân viên thuộc nhóm vận hành, bán lẻ, F&B hoặc logistics. Trong 2 tuần đầu — nhân viên nhận lần đầu, HR thấy dashboard chạy tự động, lãnh đạo thấy số thật. Không cần thay đổi hệ thống hiện có.": "Ideal pilot: 50–300 employees in operations, retail, F&B or logistics. In the first two weeks, employees receive the first payout, HR sees the dashboard run automatically, and leaders see real numbers. No need to change existing systems.",
+  "Chọn nhóm pilot": "Select pilot group",
+  "50–300 nhân viên, chọn nhóm có nhu cầu rõ nhất. Vrddi sẽ gợi ý nhóm phù hợp dựa trên profile doanh nghiệp.": "50–300 employees, selected from the group with the clearest need. Vrddi can recommend the best-fit group based on company profile.",
+  "Kết nối dữ liệu nhân sự": "Connect HR data",
+  "Vrddi kết nối với hệ thống nhân sự hiện có trong 1–2 ngày. Đội ngũ Vrddi hỗ trợ toàn bộ — HR không cần làm thêm.": "Vrddi connects with the existing HR system in 1–2 days. The Vrddi team supports the full setup — HR does not take on extra work.",
+  "Theo dõi dashboard": "Track the dashboard",
+  "Dashboard thời gian thực: tỷ lệ tham gia, số yêu cầu, tốc độ xử lý. CEO/HRD xem được báo cáo tác động ngay tuần đầu.": "Real-time dashboard: adoption, requests and processing speed. CEO/HRD can see impact reports in week one.",
+  "Đăng ký demo 30 phút — nhận đề xuất pilot trong 24h": "Book a 30-minute demo — receive a pilot proposal within 24h",
+  "Giữ chân nhân sự mà không tăng lương — không bỏ vốn, không tăng việc cho HR.": "Retain employees without raising salaries — no capital, no extra HR work."
+};
+function setLanguage(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-toggle button').forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.getElementById(lang === 'vi' ? 'langVi' : 'langEn');
+  if(activeBtn) activeBtn.classList.add('active');
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      if(!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      const parent = node.parentElement;
+      if(!parent || parent.closest('script,style')) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  const nodes = [];
+  while(walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(node => {
+    if(!node.__viText) node.__viText = node.nodeValue.trim().replace(/\s+/g,' ');
+    const key = node.__viText;
+    const leading = (node.nodeValue.match(/^\s*/) || [''])[0];
+    const trailing = (node.nodeValue.match(/\s*$/) || [''])[0];
+    node.nodeValue = leading + (lang === 'en' && I18N[key] ? I18N[key] : key) + trailing;
+  });
+  if(typeof updateDemo === 'function') updateDemo();
+  if(typeof updateROI === 'function') updateROI();
+}
+function peopleLabel(n) { return currentLang === 'en' ? `${new Intl.NumberFormat('en-US').format(n)} people` : `${new Intl.NumberFormat('vi-VN').format(n)} người`; }
+function fmtShortLocalizedVND(n) {
+  if(currentLang === 'en') {
+    if(n >= 1000000000) return (n/1000000000).toFixed(n%1000000000===0?0:1) + 'B VND';
+    if(n >= 1000000) return (n/1000000).toFixed(n%1000000===0?0:1) + 'M VND';
+    return fmtVND(n);
+  }
+  return fmtShortVND(n);
+}
+
+const VND_RATE = 25000;
+const fmtVND = n => new Intl.NumberFormat('vi-VN', {maximumFractionDigits:0}).format(Math.round(n)) + 'đ';
+const fmtShortVND = n => {
+  if(n >= 1000000000) return (n/1000000000).toFixed(n%1000000000===0?0:1).replace('.',',') + ' tỷ';
+  if(n >= 1000000) return (n/1000000).toFixed(n%1000000===0?0:1).replace('.',',') + ' triệu';
+  return fmtVND(n);
+};
 const fmtUSD = n => new Intl.NumberFormat('en-US', {maximumFractionDigits:0}).format(n) + ' USD';
 const groupSize = document.getElementById('groupSize');
 const monthlyContribution = document.getElementById('monthlyContribution');
@@ -284,6 +563,11 @@ const multipleResult = document.getElementById('multipleResult');
 const peoplePaid = document.getElementById('peoplePaid');
 const totalPayout = document.getElementById('totalPayout');
 const cvpText = document.getElementById('cvpText');
+let displayCurrency = 'VND';
+function dualMoney(vnd){
+  const usd = vnd / VND_RATE;
+  return displayCurrency === 'VND' ? `${fmtVND(vnd)} · ${fmtUSD(usd)}` : `${fmtUSD(usd)} · ${fmtVND(vnd)}`;
+}
 function updateDemo(){
   const g = parseInt(groupSize.value,10);
   const c = parseInt(monthlyContribution.value,10);
@@ -291,18 +575,61 @@ function updateDemo(){
   const pool = g*c;
   const perPerson = Math.floor(pool/r);
   const multiple = (perPerson/c).toFixed(1).replace('.0','');
-  groupValue.textContent = g + ' người';
-  contributionValue.textContent = fmtUSD(c);
-  requestValue.textContent = r + ' người';
-  poolResult.textContent = fmtUSD(pool);
-  payoutResult.textContent = fmtUSD(perPerson);
-  multipleResult.textContent = 'Tương đương ' + multiple + 'x khoản đóng hằng tháng';
-  peoplePaid.textContent = r;
-  totalPayout.textContent = new Intl.NumberFormat('en-US').format(pool);
-  cvpText.textContent = `Với ${g} người trong group, mỗi người đóng ${fmtUSD(c)}/tháng. Khi có ${r} nhân sự request trong tháng, mỗi người có thể nhận khoảng ${fmtUSD(perPerson)} — tương đương ${multiple}x khoản đóng hằng tháng — không lãi suất, không tạo khoản vay cá nhân.`;
+  groupValue.textContent = peopleLabel(g);
+  contributionValue.textContent = fmtVND(c);
+  requestValue.textContent = peopleLabel(r);
+  poolResult.textContent = displayCurrency === 'VND' ? fmtVND(pool) : fmtUSD(pool/VND_RATE);
+  payoutResult.textContent = displayCurrency === 'VND' ? fmtVND(perPerson) : fmtUSD(perPerson/VND_RATE);
+  multipleResult.textContent = currentLang === 'en'
+    ? 'Equivalent to ' + multiple + 'x the monthly contribution · ' + dualMoney(perPerson)
+    : 'Tương đương ' + multiple + 'x khoản đóng hằng tháng · ' + dualMoney(perPerson);
+  peoplePaid.textContent = new Intl.NumberFormat(currentLang === 'en' ? 'en-US' : 'vi-VN').format(r);
+  totalPayout.textContent = fmtShortLocalizedVND(pool);
+  cvpText.textContent = currentLang === 'en'
+    ? `${g} employees each contribute ${fmtVND(c)}/month. When needed, one employee receives ${fmtVND(perPerson)} immediately — ${multiple}x the contribution. No interest. No debt. No asking anyone.`
+    : `${g} nhân viên, mỗi người đóng ${fmtVND(c)}/tháng. Khi cần — một người nhận ngay ${fmtVND(perPerson)}, gấp ${multiple} lần. Không lãi. Không nợ. Không xin ai.`;
 }
 [groupSize,monthlyContribution,requestCount].forEach(el=>el.addEventListener('input', updateDemo));
+
+const roiEmployees = document.getElementById('roiEmployees');
+const roiSalary = document.getElementById('roiSalary');
+const roiBefore = document.getElementById('roiBefore');
+const roiAfter = document.getElementById('roiAfter');
+const roiEmployeeValue = document.getElementById('roiEmployeeValue');
+const roiSalaryValue = document.getElementById('roiSalaryValue');
+const roiBeforeValue = document.getElementById('roiBeforeValue');
+const roiAfterValue = document.getElementById('roiAfterValue');
+const roiSavedPeople = document.getElementById('roiSavedPeople');
+const roiSavings = document.getElementById('roiSavings');
+const roiCostPerExit = document.getElementById('roiCostPerExit');
+const roiDelta = document.getElementById('roiDelta');
+const roiText = document.getElementById('roiText');
+function updateROI(){
+  const employees = parseInt(roiEmployees.value,10);
+  const salary = parseInt(roiSalary.value,10);
+  const before = parseInt(roiBefore.value,10);
+  let after = parseInt(roiAfter.value,10);
+  if(after > before) after = before;
+  const delta = Math.max(0, before-after);
+  const savedPeople = Math.round(employees * delta / 100);
+  const costPerExit = salary * 2;
+  const savings = savedPeople * costPerExit;
+  roiEmployeeValue.textContent = peopleLabel(employees);
+  roiSalaryValue.textContent = fmtVND(salary);
+  roiBeforeValue.textContent = before + '%';
+  roiAfterValue.textContent = after + '%';
+  roiSavedPeople.textContent = new Intl.NumberFormat(currentLang === 'en' ? 'en-US' : 'vi-VN').format(savedPeople);
+  roiSavings.textContent = fmtShortLocalizedVND(savings);
+  roiCostPerExit.textContent = fmtShortLocalizedVND(costPerExit);
+  roiDelta.textContent = delta + '%';
+  roiText.textContent = currentLang === 'en'
+    ? `With ${new Intl.NumberFormat('en-US').format(employees)} employees, if attrition drops from ${before}% to ${after}%, the company retains about ${savedPeople} more people per year. At an average salary of ${fmtVND(salary)}, estimated savings are ${fmtShortLocalizedVND(savings)} per year.`
+    : `Với ${new Intl.NumberFormat('vi-VN').format(employees)} nhân sự, nếu tỷ lệ nghỉ việc giảm từ ${before}% xuống ${after}%, doanh nghiệp giữ lại thêm khoảng ${savedPeople} người/năm. Với lương trung bình ${fmtVND(salary)}, khoản tiết kiệm ước tính là ${fmtShortVND(savings)}/năm.`;
+}
+[roiEmployees,roiSalary,roiBefore,roiAfter].forEach(el=>el.addEventListener('input', updateROI));
 updateDemo();
+updateROI();
+setLanguage('vi');
 const observer = new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show')}})},{threshold:.08});
 document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
 </script>
