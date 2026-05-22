@@ -24,7 +24,7 @@ body{margin:0;font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,"Se
 a{color:inherit;text-decoration:none}
 ::selection{background:rgba(246,170,28,.28)}
 .nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(15,23,42,.08)}
-.logo-mark{width:40px;height:40px;border-radius:14px;background:linear-gradient(135deg,var(--gold) 0 43%,var(--blue) 44%);box-shadow:0 12px 28px rgba(21,87,192,.14);flex:0 0 auto}
+.nav-logo{width:92px;height:auto;display:block;flex:0 0 auto}.logo-mark{width:40px;height:40px;border-radius:14px;background:linear-gradient(135deg,var(--gold) 0 43%,var(--blue) 44%);box-shadow:0 12px 28px rgba(21,87,192,.14);flex:0 0 auto}
 .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--blue-deep),var(--blue));color:white;box-shadow:0 14px 30px rgba(21,87,192,.2);transition:.22s ease}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(21,87,192,.26)}
 .btn-soft{display:inline-flex;align-items:center;justify-content:center;background:#fff;border:1px solid var(--line);box-shadow:0 10px 26px rgba(15,23,42,.055);transition:.22s ease}.btn-soft:hover{transform:translateY(-2px);border-color:#cbd9ee}
 .hero{position:relative;min-height:92vh;padding-top:98px;overflow:hidden;background:radial-gradient(circle at 12% 7%,rgba(246,170,28,.15),transparent 27%),radial-gradient(circle at 88% 10%,rgba(21,87,192,.14),transparent 30%),linear-gradient(180deg,#fff 0%,#f5f8ff 100%)}
@@ -40,7 +40,7 @@ a{color:inherit;text-decoration:none}
 .problem-card{transition:.22s ease}.problem-card:hover{transform:translateY(-5px);box-shadow:0 24px 58px rgba(15,23,42,.09)}
 .step-num{width:44px;height:44px;min-width:44px;border-radius:16px;background:linear-gradient(135deg,var(--blue),#1D7FF2);color:white;display:flex;align-items:center;justify-content:center;font-weight:900;box-shadow:0 12px 24px rgba(21,87,192,.18)}
 .compare{overflow:hidden}.compare-row{display:grid;grid-template-columns:1.25fr .9fr .9fr;border-bottom:1px solid var(--line)}.compare-row:last-child{border-bottom:0}.compare-row>div{padding:16px 18px}.compare-head{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:900;background:#F8FBFF}.check{color:#059669;font-weight:900}.cross{color:#E11D48;font-weight:900}
-.range{appearance:none;width:100%;height:7px;border-radius:999px;background:#D9E5F4;outline:none}.range::-webkit-slider-thumb{appearance:none;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--blue),#1D7FF2);box-shadow:0 8px 18px rgba(21,87,192,.28);cursor:pointer}.range::-moz-range-thumb{width:22px;height:22px;border:0;border-radius:50%;background:var(--blue);cursor:pointer}.input-card{background:#F8FBFF;border:1px solid var(--line);border-radius:20px;padding:18px}.result-card{background:linear-gradient(135deg,#0B347B,#1557C0 62%,#1D7FF2);color:white;border-radius:30px;box-shadow:0 24px 62px rgba(21,87,192,.24)}
+.range{appearance:none;width:100%;height:7px;border-radius:999px;background:#D9E5F4;outline:none}.range::-webkit-slider-thumb{appearance:none;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--blue),#1D7FF2);box-shadow:0 8px 18px rgba(21,87,192,.28);cursor:pointer}.range:disabled{opacity:.85;cursor:not-allowed}.range:disabled::-webkit-slider-thumb{cursor:not-allowed}.range:disabled::-moz-range-thumb{cursor:not-allowed}.range::-moz-range-thumb{width:22px;height:22px;border:0;border-radius:50%;background:var(--blue);cursor:pointer}.input-card{background:#F8FBFF;border:1px solid var(--line);border-radius:20px;padding:18px}.result-card{background:linear-gradient(135deg,#0B347B,#1557C0 62%,#1D7FF2);color:white;border-radius:30px;box-shadow:0 24px 62px rgba(21,87,192,.24)}
 .mini-chart{height:9px;background:#E7EEF8;border-radius:999px;overflow:hidden}.mini-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--gold),var(--blue));transition:width .35s ease}.usecase{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;min-height:162px;transition:.22s ease}.usecase:hover{transform:translateY(-4px);box-shadow:0 18px 48px rgba(15,23,42,.07)}
 .orbit{position:relative;aspect-ratio:1;border-radius:999px;background:radial-gradient(circle,#fff 0 32%,#EAF2FF 33% 52%,#fff 53%);border:1px solid var(--line);box-shadow:inset 0 0 0 15px rgba(21,87,192,.025),0 24px 62px rgba(15,23,42,.075)}.orbit-dot{position:absolute;width:72px;height:72px;border-radius:23px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:11px;box-shadow:0 16px 32px rgba(15,23,42,.08);padding:6px}.dot-1{top:5%;left:50%;transform:translateX(-50%)}.dot-2{top:27%;right:2%}.dot-3{bottom:15%;right:10%}.dot-4{bottom:15%;left:10%}.dot-5{top:27%;left:2%}.orbit-center{position:absolute;inset:36%;border-radius:28px;background:linear-gradient(135deg,var(--blue),#1D7FF2);color:white;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;box-shadow:0 16px 34px rgba(21,87,192,.24);padding:8px}
 .mobile-nav-btn{display:none}
@@ -52,7 +52,7 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1024px){.compare-top{display:none!important}.compare-item{grid-template-columns:1fr}.compare-item>div{padding:14px 15px}.compare-criterion{font-size:17px}.compare-old:before{content:'Tạm ứng / Vay: ';font-size:11px;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:5px}.compare-vrddi:before{content:'✓ Vrddi: ';font-size:11px;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:5px}.nav-links{display:flex;overflow-x:auto;gap:16px;max-width:calc(100vw - 170px);padding:4px 0;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}}
 
 @media(max-width:1024px){.nav-links{display:none}.mobile-stack{grid-template-columns:1fr!important}.hide-tablet{display:none}.hero{min-height:auto;padding-top:86px}.section{padding:72px 0}.compare-row{grid-template-columns:1fr}.compare-row>div{border-bottom:1px solid var(--line)}.compare-row>div:last-child{border-bottom:0}.compare-head{display:none}.compare-row>div[data-label]:before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#94A3B8;font-weight:900;margin-bottom:5px}.mobile-nav-btn{display:inline-flex}}
-@media(max-width:640px){.nav-inner{padding:11px 15px!important}.logo-mark{width:36px;height:36px;border-radius:12px}.nav-cta{display:none}.hero{padding-top:76px}.hero-wrap{padding-top:46px!important;padding-bottom:54px!important}.title-xl{font-size:34px;letter-spacing:-.035em}.title-lg{font-size:27px;letter-spacing:-.028em}.lead{font-size:16px;line-height:1.58}.text-body{font-size:15.5px}.section{padding:58px 0}.card,.card-strong,.result-card{border-radius:22px}.metric{font-size:31px}.pill{font-size:11px;padding:6px 9px}.hero-cta{flex-direction:column}.btn-primary,.btn-soft{width:100%}.compare-row>div{padding:14px}.input-card{padding:16px;border-radius:18px}.orbit{max-width:330px;margin:0 auto}.orbit-dot{width:60px;height:60px;font-size:9.5px;border-radius:18px}.orbit-center{font-size:11px;border-radius:22px}.mobile-two{grid-template-columns:1fr!important}.usecase{min-height:auto}.result-number{font-size:35px!important;line-height:1.1}.hero-stats{grid-template-columns:1fr!important}.hero-card{padding:20px!important}}
+@media(max-width:640px){.nav-inner{padding:11px 15px!important}.nav-logo{width:76px}.logo-mark{width:36px;height:36px;border-radius:12px}.nav-cta{display:none}.hero{padding-top:76px}.hero-wrap{padding-top:46px!important;padding-bottom:54px!important}.title-xl{font-size:34px;letter-spacing:-.035em}.title-lg{font-size:27px;letter-spacing:-.028em}.lead{font-size:16px;line-height:1.58}.text-body{font-size:15.5px}.section{padding:58px 0}.card,.card-strong,.result-card{border-radius:22px}.metric{font-size:31px}.pill{font-size:11px;padding:6px 9px}.hero-cta{flex-direction:column}.btn-primary,.btn-soft{width:100%}.compare-row>div{padding:14px}.input-card{padding:16px;border-radius:18px}.orbit{max-width:330px;margin:0 auto}.orbit-dot{width:60px;height:60px;font-size:9.5px;border-radius:18px}.orbit-center{font-size:11px;border-radius:22px}.mobile-two{grid-template-columns:1fr!important}.usecase{min-height:auto}.result-number{font-size:35px!important;line-height:1.1}.hero-stats{grid-template-columns:1fr!important}.hero-card{padding:20px!important}}
 @media(max-width:1024px){.nav-links{display:flex!important;overflow-x:auto;gap:16px;max-width:calc(100vw - 170px);padding:4px 0;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}}
 @media(max-width:640px){.nav-links{max-width:calc(100vw - 95px);font-size:12px}.nav-inner{gap:8px}.nav-inner>a:first-child>div:last-child{display:none}.currency-toggle{width:100%;justify-content:center}.flex:has(.currency-toggle){flex-direction:column;align-items:flex-start}}
 
@@ -64,14 +64,122 @@ a{color:inherit;text-decoration:none}
 @media(max-width:1024px){html{scroll-snap-type:none}.nav-actions{margin-left:auto}.nav-links{display:none!important}}
 @media(max-width:1024px){html[lang="en"] .compare-old:before{content:'Advance / Loan: '!important}html[lang="en"] .compare-vrddi:before{content:'✓ Vrddi: '!important}}
 
+
+
+/* === Mobile refinement: keep menu visible + improve comparison cards === */
+@media(max-width:1024px){
+  .nav{max-height:none;}
+  .nav-inner{
+    flex-wrap:wrap;
+    align-items:center;
+    gap:10px!important;
+    padding:10px 14px 8px!important;
+  }
+  .nav-inner > a:first-child{
+    min-width:0;
+    flex:1 1 auto;
+  }
+  .nav-actions{
+    flex:0 0 auto;
+    margin-left:0!important;
+  }
+  .nav-links{
+    order:3;
+    display:flex!important;
+    width:100%;
+    max-width:100%!important;
+    overflow-x:auto;
+    overflow-y:hidden;
+    gap:8px!important;
+    padding:7px 1px 3px!important;
+    margin-top:2px;
+    white-space:nowrap;
+    scroll-snap-type:x proximity;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .nav-links::-webkit-scrollbar{display:none;}
+  .nav-links a{
+    flex:0 0 auto;
+    scroll-snap-align:start;
+    padding:8px 12px;
+    border-radius:999px;
+    background:#F8FBFF;
+    border:1px solid var(--line);
+    color:#334155;
+    box-shadow:0 4px 14px rgba(15,23,42,.035);
+  }
+  .nav-links a:hover{background:#EAF2FF;color:var(--blue-deep);}
+  .hero{padding-top:122px!important;}
+}
+
+@media(max-width:640px){
+  .nav-inner{padding:9px 12px 7px!important;}
+  .nav-inner>a:first-child>div:last-child{display:block!important;}
+  .nav-inner .text-xs{display:block;font-size:10px;max-width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .nav-actions{gap:6px!important;}
+  .nav-links{
+    display:flex!important;
+    font-size:12px!important;
+    gap:7px!important;
+    padding-top:6px!important;
+  }
+  .nav-links a{padding:7px 10px;}
+  .hero{padding-top:118px!important;}
+}
+
+@media(max-width:1024px){
+  .compare-enhanced{padding:14px!important;}
+  .compare-list{gap:14px;}
+  .compare-item{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    grid-template-areas:
+      "criterion criterion"
+      "old vrddi";
+    gap:9px;
+    padding:12px;
+    border:1px solid var(--line);
+    border-radius:22px;
+    background:#fff;
+    box-shadow:0 12px 32px rgba(15,23,42,.055);
+  }
+  .compare-criterion{grid-area:criterion;font-size:15.5px;font-weight:900;background:#F8FAFC;}
+  .compare-old{grid-area:old;}
+  .compare-vrddi{grid-area:vrddi;}
+  .compare-item>div{padding:13px 12px;border-radius:16px;font-size:13px;line-height:1.45;}
+  .compare-old:before,
+  .compare-vrddi:before{
+    display:flex!important;
+    align-items:center;
+    gap:4px;
+    min-height:22px;
+    margin-bottom:7px!important;
+    font-size:10px!important;
+    line-height:1.15;
+    letter-spacing:.04em;
+    opacity:.9;
+  }
+  .compare-old:before{content:'Tạm ứng / Vay'!important;color:#BE123C;}
+  .compare-vrddi:before{content:'✓ Vrddi'!important;color:#047857;}
+  html[lang="en"] .compare-old:before{content:'Advance / Loan'!important;}
+  html[lang="en"] .compare-vrddi:before{content:'✓ Vrddi'!important;}
+}
+
+@media(max-width:390px){
+  .compare-item{gap:7px;padding:9px;border-radius:19px;}
+  .compare-item>div{padding:11px 9px;font-size:12.2px;border-radius:14px;}
+  .compare-criterion{font-size:14px!important;}
+}
+
 </style>
 </head>
 <body>
 <nav class="nav">
   <div class="nav-inner max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
     <a href="#top" class="flex items-center gap-3 text-slate-900">
-      <div class="logo-mark"></div>
-      <div><div class="font-black text-lg tracking-tight">Vrddi</div><div class="text-xs font-semibold text-slate-500">Phúc lợi Sức khỏe Tài chính nhân sự</div></div>
+      <img class="nav-logo" src="https://vrddi.com/img/nav-logo.svg" alt="Vrddi logo" />
+      <div><div class="text-xs font-semibold text-slate-500">Phúc lợi Sức khỏe Tài chính nhân sự</div></div>
     </a>
     <div class="nav-links flex items-center gap-7 text-sm font-bold text-slate-600">
       <a href="#pain" class="hover:text-blue-700">Nhân sự nghỉ việc</a>
@@ -94,11 +202,11 @@ a{color:inherit;text-decoration:none}
   <div class="hero-wrap max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 items-center mobile-stack">
       <div class="fade">
-        <div class="eyebrow mb-6"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>Đã vận hành tại Ấn Độ, Bahrain, Qatar — Đang pilot tại Việt Nam</div>
+        <div class="eyebrow mb-6"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>Đã vận hành tại Ấn Độ, Bahrain, Qatar — Đang có mặt tại Việt Nam</div>
         <h1 class="title-xl mb-6">Giữ người không cần tăng lương. <span class="gradient-text">Nhân viên có tiền khi cần</span> — không vay, không lãi.</h1>
         <p class="lead max-w-2xl mb-8">Mỗi tháng nhân viên đóng một khoản nhỏ. Khi có việc gấp — viện phí, học phí, sửa nhà — họ nhận hỗ trợ lớn hơn <strong class="text-blue-800">10–12 lần</strong>, ngay trong kỳ lương. Doanh nghiệp không bỏ vốn. HR không tăng việc.</p>
         <div class="hero-cta flex flex-wrap gap-4 mb-10">
-          <a href="#roi" class="btn-primary px-6 py-4 rounded-2xl font-black">Tính ROI cho doanh nghiệp của bạn <span>→</span></a>
+          <a href="#roi" class="btn-primary px-6 py-4 rounded-2xl font-black">Tính ROI cho doanh nghiệp <span>→</span></a>
           <a href="#demo" class="btn-soft px-6 py-4 rounded-2xl font-black text-slate-800">Xem demo thực tế (2 phút)</a>
         </div>
         <div class="hero-stats grid grid-cols-3 gap-4 max-w-2xl">
@@ -117,7 +225,7 @@ a{color:inherit;text-decoration:none}
           <div class="space-y-4">
             <div class="card p-5 flex gap-4 items-start"><div class="step-num">1</div><div><h3 class="font-black text-lg">Nhân viên có việc bất ngờ cần tiền</h3><p class="text-small mt-1">Viện phí đột xuất, học phí đầu năm, sửa nhà — những khoản không thể đợi đến 2 tháng lương tới.</p></div></div>
             <div class="card p-5 flex gap-4 items-start"><div class="step-num">2</div><div><h3 class="font-black text-lg">Hệ thống xử lý thay HR</h3><p class="text-small mt-1">Hệ thống kiểm tra điều kiện và gợi ý quyết định — không cần HR xem từng hồ sơ.</p></div></div>
-            <div class="card p-5 flex gap-4 items-start"><div class="step-num">3</div><div><h3 class="font-black text-lg">Nhận 10–12x khoản đóng — ngay trong kỳ lương gần nhất</h3><p class="text-small mt-1">Nhân viên cảm nhận được doanh nghiệp quan tâm thật sự — không phải vay nợ, không áp lực trả.</p></div></div>
+            <div class="card p-5 flex gap-4 items-start"><div class="step-num">3</div><div><h3 class="font-black text-lg">Nhận số tiền 12x khoản đóng hàng tháng — ngay trong kỳ lương gần nhất</h3><p class="text-small mt-1">Nhân viên cảm nhận được doanh nghiệp quan tâm thật sự — không phải vay nợ, không áp lực trả.</p></div></div>
           </div>
         </div>
       </div>
@@ -145,7 +253,7 @@ a{color:inherit;text-decoration:none}
     <div class="text-center max-w-4xl mx-auto mb-14 fade">
       <div class="eyebrow mb-5">02 · Giải pháp</div>
       <h2 class="title-lg">Vrddi: nhân viên có tiền khi cần — <span class="gradient-text">doanh nghiệp không bỏ vốn, HR không thêm việc</span>.</h2>
-      <p class="lead mt-5">Nhân viên đóng góp nhỏ mỗi tháng vào một pool chung. Khi có nhu cầu hợp lệ, họ nhận khoản hỗ trợ lớn hơn 10–12 lần — không lãi, không vay, không duyệt thủ công. Doanh nghiệp không bỏ một đồng vốn.</p>
+      <p class="lead mt-5">Nhân viên đóng góp nhỏ mỗi tháng vào một pool chung. Khi có nhu cầu hợp lệ, họ nhận khoản hỗ trợ bằng 12 lần số tiền đóng hàng tháng — không lãi, không vay, không duyệt thủ công. Doanh nghiệp không bỏ một đồng vốn.</p>
     </div>
     <div class="grid lg:grid-cols-2 gap-10 items-center mobile-stack">
       <div class="fade">
@@ -159,7 +267,7 @@ a{color:inherit;text-decoration:none}
         </div>
       </div>
       <div class="space-y-4 fade">
-        <div class="card p-6 flex gap-4"><div class="step-num">01</div><div><h3 class="text-xl font-black mb-2">Nhân viên có tiền đúng lúc — không vay, không xấu hổ</h3><p class="text-body">Có điểm tựa tài chính ngay khi cần — không cần vay bên ngoài, không áp lực lãi suất, không cảm giác mang nợ.</p></div></div>
+        <div class="card p-6 flex gap-4"><div class="step-num">01</div><div><h3 class="text-xl font-black mb-2">Nhân viên có tiền đúng lúc — không vay, không ngại ngần</h3><p class="text-body">Có điểm tựa tài chính ngay khi cần — không cần vay bên ngoài, không áp lực lãi suất, không cảm giác mang nợ.</p></div></div>
         <div class="card p-6 flex gap-4"><div class="step-num">02</div><div><h3 class="text-xl font-black mb-2">HR không ôm thêm việc</h3><p class="text-body">99% yêu cầu được xử lý tự động. HR chỉ nhìn vào dashboard — không phải xử lý từng hồ sơ, không thêm quy trình.</p></div></div>
         <div class="card p-6 flex gap-4"><div class="step-num">03</div><div><h3 class="text-xl font-black mb-2">Doanh nghiệp không bỏ một đồng vốn</h3><p class="text-body">Pool được tạo từ đóng góp của nhân viên — không từ ngân sách công ty. Không có nợ xấu, không rủi ro thu hồi, không ảnh hưởng dòng tiền doanh nghiệp.</p></div></div>
       </div>
@@ -237,32 +345,32 @@ a{color:inherit;text-decoration:none}
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center max-w-4xl mx-auto mb-12 fade">
       <div class="eyebrow mb-5">05 · Demo tính toán</div>
-      <h2 class="title-lg">Nhân viên đóng 500K/tháng — nhận được 6 triệu khi cần. Không lãi. Không vay ai.</h2>
-      <p class="lead mt-5">Nhóm 12 nhân viên, mỗi người đóng 500.000đ/tháng → pool 6 triệu đồng. Khi 1 người có nhu cầu hợp lệ, họ nhận ngay 6 triệu — gấp 12 lần số họ đã bỏ vào. Tháng sau họ lại đóng bình thường. Không ai mang nợ. <a class="font-black text-blue-700 underline decoration-blue-200 underline-offset-4" href="https://www.youtube.com/watch?v=DwW145VBNS0" target="_blank" rel="noopener">Xem video demo 2 phút</a>.</p>
+      <h2 class="title-lg">Nhân viên đóng 1,5 triệu/tháng — nhận được 18 triệu khi cần. Không lãi. Không vay ai.</h2>
+      <p class="lead mt-5">Nhóm 12 nhân viên, mỗi người đóng 1.500.000đ/tháng → pool 18 triệu đồng. Khi 1 người có nhu cầu hợp lệ, họ nhận ngay 18 triệu — gấp 12 lần số họ đã bỏ vào. Tháng sau họ lại đóng bình thường. Không ai mang nợ. <a class="font-black text-blue-700 underline decoration-blue-200 underline-offset-4" href="https://www.youtube.com/watch?v=DwW145VBNS0" target="_blank" rel="noopener">Xem video demo 2 phút</a>.</p>
     </div>
     <div class="grid lg:grid-cols-5 gap-8 mobile-stack">
       <div class="lg:col-span-2 card-strong p-6 lg:p-8 fade">
         <div class="flex items-center justify-between gap-4 mb-6"><h3 class="text-2xl font-black">Tính ngay: nhóm bạn nhận được bao nhiêu?</h3><div class="currency-toggle"><button class="active" type="button" onclick="displayCurrency='VND';this.classList.add('active');this.nextElementSibling.classList.remove('active');updateDemo();">VND</button><button type="button" onclick="displayCurrency='USD';this.classList.add('active');this.previousElementSibling.classList.remove('active');updateDemo();">USD</button></div></div>
         <div class="space-y-5">
-          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số nhân viên trong nhóm</label><span id="groupValue" class="pill pill-blue">12 người</span></div><input id="groupSize" class="range" type="range" min="6" max="24" value="12" step="1"></div>
-          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Đóng góp hằng tháng</label><span id="contributionValue" class="pill pill-gold">500.000đ</span></div><input id="monthlyContribution" class="range" type="range" min="300000" max="1000000" value="500000" step="100000"></div>
-          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số người cần hỗ trợ mỗi tháng</label><span id="requestValue" class="pill pill-green">1 người</span></div><input id="requestCount" class="range" type="range" min="1" max="4" value="1" step="1"></div>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số nhân viên trong nhóm</label><span id="groupValue" class="pill pill-blue">12 người</span></div><input id="groupSize" class="range" type="range" min="12" max="12" value="12" step="1" disabled aria-disabled="true"></div>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Đóng góp hằng tháng</label><span id="contributionValue" class="pill pill-gold">1.500.000đ</span></div><input id="monthlyContribution" class="range" type="range" min="500000" max="3000000" value="1500000" step="100000"></div>
+          <div class="input-card"><div class="flex justify-between gap-4 mb-4"><label class="font-black">Số người cần hỗ trợ mỗi tháng</label><span id="requestValue" class="pill pill-green">1 người</span></div><input id="requestCount" class="range" type="range" min="1" max="1" value="1" step="1" disabled aria-disabled="true"></div>
           <p class="text-small">Con số trên là ví dụ minh họa. Khi triển khai thực tế, mức đóng góp và điều kiện sẽ được cấu hình riêng cho từng doanh nghiệp.</p>
         </div>
       </div>
       <div class="lg:col-span-3 space-y-5 fade">
         <div class="result-card p-7 lg:p-9">
           <div class="grid md:grid-cols-2 gap-7 mobile-two">
-            <div><div class="text-blue-100 font-bold mb-2">Tổng quỹ hỗ trợ mỗi tháng</div><div id="poolResult" class="result-number text-4xl lg:text-5xl font-black tracking-tight">6.000.000đ</div><div class="text-blue-100 mt-3">= số người × khoản đóng</div></div>
-            <div><div class="text-blue-100 font-bold mb-2">Một người nhận được khi cần</div><div id="payoutResult" class="result-number text-4xl lg:text-5xl font-black tracking-tight text-amber-200">6.000.000đ</div><div id="multipleResult" class="text-blue-100 mt-3">Tương đương 12x khoản đóng hằng tháng · ~240 USD</div></div>
+            <div><div class="text-blue-100 font-bold mb-2">Tổng quỹ hỗ trợ mỗi tháng</div><div id="poolResult" class="result-number text-4xl lg:text-5xl font-black tracking-tight">18.000.000đ</div><div class="text-blue-100 mt-3">= số người × khoản đóng</div></div>
+            <div><div class="text-blue-100 font-bold mb-2">Một người nhận được khi cần</div><div id="payoutResult" class="result-number text-4xl lg:text-5xl font-black tracking-tight text-amber-200">18.000.000đ</div><div id="multipleResult" class="text-blue-100 mt-3">Tương đương 12x khoản đóng hằng tháng · ~720 USD</div></div>
           </div>
         </div>
         <div class="grid md:grid-cols-3 gap-5 mobile-two">
           <div class="card p-5"><div class="text-small font-bold">Người nhận trong tháng</div><div id="peoplePaid" class="metric gradient-text mt-2">1</div></div>
-          <div class="card p-5"><div class="text-small font-bold">Tổng chi trả mô phỏng</div><div id="totalPayout" class="metric gradient-text mt-2">6 triệu</div></div>
+          <div class="card p-5"><div class="text-small font-bold">Tổng chi trả mô phỏng</div><div id="totalPayout" class="metric gradient-text mt-2">18 triệu</div></div>
           <div class="card p-5"><div class="text-small font-bold">Lãi suất nhân viên</div><div class="metric gradient-text mt-2">0%</div></div>
         </div>
-        <div class="card p-6"><h4 class="font-black text-xl mb-2">Thông điệp dễ nhớ</h4><p id="cvpText" class="text-body">12 nhân viên, mỗi người đóng 500.000đ/tháng. Khi cần — một người nhận ngay 6.000.000đ, gấp 12 lần. Không lãi. Không nợ. Không xin ai.</p></div>
+        <div class="card p-6"><h4 class="font-black text-xl mb-2">Thông điệp với nhân viên</h4><p id="cvpText" class="text-body">12 nhân viên, mỗi người đóng 1.500.000đ/tháng. Khi cần — một người nhận ngay 18.000.000đ, gấp 12 lần. Không lãi. Không nợ. Không ngại ai.</p></div>
       </div>
     </div>
   </div>
@@ -337,7 +445,7 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <footer class="py-9 text-center text-slate-500 border-t border-slate-200 bg-white">
-  <div class="max-w-7xl mx-auto px-6"><div class="font-black text-slate-900 text-xl mb-2">Vrddi</div><div class="text-small">Giữ chân nhân sự mà không tăng lương — không bỏ vốn, không tăng việc cho HR.</div></div>
+  <div class="max-w-7xl mx-auto px-6"><div class="font-black text-slate-900 text-xl mb-2">Vrddi</div><div class="text-small">Giữ chân nhân sự mà không tăng lương — không bỏ vốn, không tăng việc cho HR.</div><div class="text-small mt-2">© Vrddi 2026</div></div>
 </footer>
 
 <script>
@@ -358,7 +466,7 @@ const I18N = {
   "Mỗi tháng nhân viên đóng một khoản nhỏ. Khi có việc gấp — viện phí, học phí, sửa nhà — họ nhận hỗ trợ lớn hơn": "Each month, employees contribute a small amount. When urgent needs arise — medical bills, tuition, home repairs — they can receive support worth",
   "10–12 lần": "10–12x",
   ", ngay trong kỳ lương. Doanh nghiệp không bỏ vốn. HR không tăng việc.": "within the pay cycle. The company uses no working capital. HR gets no extra workload.",
-  "Tính ROI cho doanh nghiệp của bạn": "Calculate ROI for your company",
+  "Tính ROI cho doanh nghiệp": "Calculate ROI for your company",
   "Xem demo thực tế (2 phút)": "Watch the 2-minute demo",
   "lãi — nhân viên nhận, không phải vay": "interest — employees receive support, not debt",
   "tự động — HR không cần xử lý thủ công": "automated — HR avoids manual processing",
@@ -370,7 +478,7 @@ const I18N = {
   "Viện phí đột xuất, học phí đầu năm, sửa nhà — những khoản không thể đợi đến 2 tháng lương tới.": "Unexpected medical bills, school fees and home repairs cannot wait for the next two paychecks.",
   "Hệ thống xử lý thay HR": "The system handles it for HR",
   "Hệ thống kiểm tra điều kiện và gợi ý quyết định — không cần HR xem từng hồ sơ.": "The system checks eligibility and recommends decisions — HR does not review every case.",
-  "Nhận 10–12x khoản đóng — ngay trong kỳ lương gần nhất": "Receive 10–12x the contribution — within the nearest payroll cycle",
+  "Nhận số tiền 12x khoản đóng hàng tháng — ngay trong kỳ lương gần nhất": "Receive 10–12x the contribution — within the nearest payroll cycle",
   "Nhân viên cảm nhận được doanh nghiệp quan tâm thật sự — không phải vay nợ, không áp lực trả.": "Employees feel genuine support from the company — no debt, no repayment pressure.",
   "01 · Nỗi đau thật": "01 · Real pain",
   "Nhân sự không nghỉ vì lương thấp — họ nghỉ vì": "Employees do not only leave because of low pay — they leave because of",
@@ -388,7 +496,7 @@ const I18N = {
   "02 · Giải pháp": "02 · Solution",
   "Vrddi: nhân viên có tiền khi cần —": "Vrddi: employees get money when they need it —",
   "doanh nghiệp không bỏ vốn, HR không thêm việc": "no company capital, no extra HR work",
-  "Nhân viên đóng góp nhỏ mỗi tháng vào một pool chung. Khi có nhu cầu hợp lệ, họ nhận khoản hỗ trợ lớn hơn 10–12 lần — không lãi, không vay, không duyệt thủ công. Doanh nghiệp không bỏ một đồng vốn.": "Employees make a small monthly contribution into a shared pool. When an eligible need arises, they receive 10–12x support — no interest, no loan, no manual approval. The company contributes no working capital.",
+  "Nhân viên đóng góp nhỏ mỗi tháng vào một pool chung. Khi có nhu cầu hợp lệ, họ nhận khoản hỗ trợ bằng 12 lần số tiền đóng hàng tháng — không lãi, không vay, không duyệt thủ công. Doanh nghiệp không bỏ một đồng vốn.": "Employees make a small monthly contribution into a shared pool. When an eligible need arises, they receive 10–12x support — no interest, no loan, no manual approval. The company contributes no working capital.",
   "Nhân viên": "Employee",
   "tham gia": "joins",
   "Đóng góp": "Monthly",
@@ -454,8 +562,8 @@ const I18N = {
   "Vốn DN bỏ ra": "Company capital",
   "Thông điệp cho CEO / CFO": "Message for CEO / CFO",
   "05 · Demo tính toán": "05 · Payout demo",
-  "Nhân viên đóng 500K/tháng — nhận được 6 triệu khi cần. Không lãi. Không vay ai.": "Employees contribute 500K/month — and can receive 6 million when needed. No interest. No loan.",
-  "Nhóm 12 nhân viên, mỗi người đóng 500.000đ/tháng → pool 6 triệu đồng. Khi 1 người có nhu cầu hợp lệ, họ nhận ngay 6 triệu — gấp 12 lần số họ đã bỏ vào. Tháng sau họ lại đóng bình thường. Không ai mang nợ.": "A group of 12 employees contributes 500,000 VND each month → a 6 million VND pool. When one eligible need arises, the employee receives 6 million — 12x their contribution. The next month, contributions continue normally. No one carries debt.",
+  "Nhân viên đóng 1,5 triệu/tháng — nhận được 18 triệu khi cần. Không lãi. Không vay ai.": "Employees contribute 1.5M/month — and can receive 18 million when needed. No interest. No loan.",
+  "Nhóm 12 nhân viên, mỗi người đóng 1.500.000đ/tháng → pool 18 triệu đồng. Khi 1 người có nhu cầu hợp lệ, họ nhận ngay 18 triệu — gấp 12 lần số họ đã bỏ vào. Tháng sau họ lại đóng bình thường. Không ai mang nợ.": "A group of 12 employees contributes 1,500,000 VND each month → a 18 million VND pool. When one eligible need arises, the employee receives 18 million — 12x their contribution. The next month, contributions continue normally. No one carries debt.",
   "Xem video demo 2 phút": "Watch the 2-minute demo",
   "Tính ngay: nhóm bạn nhận được bao nhiêu?": "Calculate how much your group can receive",
   "Số nhân viên trong nhóm": "Employees in group",
@@ -465,11 +573,11 @@ const I18N = {
   "Tổng quỹ hỗ trợ mỗi tháng": "Monthly support pool",
   "= số người × khoản đóng": "= employees × contribution",
   "Một người nhận được khi cần": "Amount one employee receives",
-  "Tương đương 12x khoản đóng hằng tháng · ~240 USD": "Equivalent to 12x the monthly contribution · ~240 USD",
+  "Tương đương 12x khoản đóng hằng tháng · ~720 USD": "Equivalent to 12x the monthly contribution · ~720 USD",
   "Người nhận trong tháng": "Recipients this month",
   "Tổng chi trả mô phỏng": "Simulated total payout",
   "Lãi suất nhân viên": "Employee interest rate",
-  "Thông điệp dễ nhớ": "Simple message",
+  "Thông điệp với nhân viên": "Simple message",
   "06 · Nhân viên dùng vào việc gì?": "06 · What do employees use it for?",
   "Đây là những việc nhân viên không dám hỏi HR — nhưng Vrddi lo được.": "These are the needs employees hesitate to ask HR about — but Vrddi can support.",
   "Vrddi tập trung vào các thời điểm tài chính nhạy cảm: lúc nhân viên cần tiền để lo cho sức khỏe, con cái, nhà cửa hoặc gia đình.": "Vrddi focuses on financially sensitive moments: health, children, home and family needs.",
@@ -586,8 +694,8 @@ function updateDemo(){
   peoplePaid.textContent = new Intl.NumberFormat(currentLang === 'en' ? 'en-US' : 'vi-VN').format(r);
   totalPayout.textContent = fmtShortLocalizedVND(pool);
   cvpText.textContent = currentLang === 'en'
-    ? `${g} employees each contribute ${fmtVND(c)}/month. When needed, one employee receives ${fmtVND(perPerson)} immediately — ${multiple}x the contribution. No interest. No debt. No asking anyone.`
-    : `${g} nhân viên, mỗi người đóng ${fmtVND(c)}/tháng. Khi cần — một người nhận ngay ${fmtVND(perPerson)}, gấp ${multiple} lần. Không lãi. Không nợ. Không xin ai.`;
+    ? `${g} employees each contribute ${fmtVND(c)}/month. When needed, one employee receives ${fmtVND(perPerson)} immediately — ${multiple}x the contribution. No interest. No debt. No awkward asking.`
+    : `${g} nhân viên, mỗi người đóng ${fmtVND(c)}/tháng. Khi cần — một người nhận ngay ${fmtVND(perPerson)}, gấp ${multiple} lần. Không lãi. Không nợ. Không ngại ai.`;
 }
 [groupSize,monthlyContribution,requestCount].forEach(el=>el.addEventListener('input', updateDemo));
 
